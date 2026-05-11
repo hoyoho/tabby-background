@@ -261,6 +261,9 @@ export class BackgroundService {
 .content-tab-active {
   background: none;
 }
+.xterm-viewport {
+  background: none !important;
+}
 .content-tab-active::after {
   content: ""; position: fixed; left: 0; right: 0; z-index: -2; display: block; width: 100%; height: 100%;
   background: var(--body-bg);
