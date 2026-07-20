@@ -48,6 +48,7 @@ Enter the font family name into the textbox, can use the font name in **appearan
 ![Black Menu](screenshots/black_menu.png)
 ![Black Terminal](screenshots/black_term.png)
 ![White Menu](screenshots/white_menu.png)
+![Blue Ping White](screenshots/bpw.png)
 
 ### Float Mode
 
