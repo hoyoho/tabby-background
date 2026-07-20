@@ -4,6 +4,7 @@ import * as uuid from "uuid";
 export type ShowType = "fullscreen" | "float";
 export type FullscreenType = "contain" | "cover";
 export type FullscreenRepeatType = "repeat" | "no-repeat";
+export type FullscreenPosition = "top" | "bottom" | "center" | "left" | "right";
 
 export type FloatXAlign = "left" | "center" | "right";
 export type FloatYAlign = "top" | "center" | "bottom";
@@ -13,6 +14,7 @@ export type Background = {
   backgroundShowType: ShowType;
   backgroundFullscreenType: FullscreenType;
   backgroundFullscreenRepeatType: FullscreenRepeatType;
+  backgroundFullscreenPosition: FullscreenPosition;
   backgroundFloatSize: number;
   backgroundFloatX: number;
   backgroundFloatY: number;
@@ -54,6 +56,7 @@ export const DefaultBackground: AdvancedBackground = {
   backgroundShowType: "fullscreen",
   backgroundFullscreenType: "cover",
   backgroundFullscreenRepeatType: "no-repeat",
+  backgroundFullscreenPosition: "center",
   backgroundFloatSize: 0,
   backgroundFloatX: 0,
   backgroundFloatY: 0,
@@ -110,6 +113,7 @@ export class BackgroundConfigProvider extends ConfigProvider {
       backgroundShowType: "fullscreen",
       backgroundFullscreenType: "cover",
       backgroundFullscreenRepeatType: "no-repeat",
+      backgroundFullscreenPosition: "center",
       backgroundFloatSize: 300,
       backgroundFloatX: 0,
       backgroundFloatY: 0,

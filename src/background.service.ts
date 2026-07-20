@@ -27,7 +27,11 @@ export class BackgroundService {
   private slideShowList: string[];
   private slideShowCurrentIndex: number;
 
-  constructor(public config: ConfigService, private logService: LogService, private translate: TranslateService) {
+  constructor(
+    public config: ConfigService,
+    private logService: LogService,
+    private translate: TranslateService,
+  ) {
     this.logger = this.logService.create("tabby-background");
     this.logger.info("BackgroundService ctor");
 
@@ -121,7 +125,7 @@ export class BackgroundService {
   applyBackgroundPreview() {
     this.backgroundStyleElement.innerHTML = this.buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex]).replace(
       /\/\*background-opacity-placeholder\*\/.*/,
-      "/*background-opacity-placeholder*/opacity: 1;"
+      "/*background-opacity-placeholder*/opacity: 1;",
     );
   }
 
@@ -235,7 +239,7 @@ export class BackgroundService {
 
   buildBackgroundCss(background: Background) {
     const { backgroundPath, backgroundShowType } = background;
-    const { backgroundFullscreenType, backgroundFullscreenRepeatType } = background;
+    const { backgroundFullscreenType, backgroundFullscreenRepeatType, backgroundFullscreenPosition } = background;
     const { backgroundFloatSize, backgroundFloatX, backgroundFloatY, backgroundFloatXAlign, backgroundFloatYAlign } = background;
     const {
       backgroundOpacity,
@@ -295,7 +299,7 @@ ${(() => {
   if (backgroundShowType === "fullscreen") {
     return `
   background-repeat: ${backgroundFullscreenRepeatType};
-  background-position: center;
+  background-position: ${backgroundFullscreenPosition};
   background-size: ${backgroundFullscreenType};`;
   } else if (backgroundShowType === "float") {
     return `
