@@ -43,6 +43,7 @@ export const translations: [string, BackgroundPluginTranslations][] = [
       "Float": "浮动",
       "Fullscreen type": "全屏类型",
       "Fullscreen": "全屏",
+      "Fullscreen position": "全屏位置",
       "Group list transparent": "分组列表透明度",
       "Home page footer transparent": "主页页脚透明度",
       "No Repeat": "不重复",
