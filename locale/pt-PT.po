@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Escurecer painel dividido inativo"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Advanced"
+msgstr "Avançado"
+
+msgid "Background"
+msgstr "Fundo"
+
+msgid "Background Filters"
+msgstr "Filtros de fundo"
+
+msgid "Background blur"
+msgstr "Desfoque de fundo"
+
+msgid "Background brightness"
+msgstr "Brilho de fundo"
+
+msgid "Background choose type"
+msgstr "Tipo de seleção de fundo"
+
+msgid "Background contrast"
+msgstr "Contraste de fundo"
+
+msgid "Background grayscale"
+msgstr "Escala de cinzentos de fundo"
+
+msgid "Background hue rotate"
+msgstr "Rotação de matiz de fundo"
+
+msgid "Background image master switch"
+msgstr "Interruptor principal da imagem de fundo"
+
+msgid "Background invert"
+msgstr "Inverter fundo"
+
+msgid "Background mode"
+msgstr "Modo de fundo"
+
+msgid "Background opacity"
+msgstr "Opacidade de fundo"
+
+msgid "Background path"
+msgstr "Caminho da imagem de fundo"
+
+msgid "Background saturate"
+msgstr "Saturação de fundo"
+
+msgid "Background sepia"
+msgstr "Sépia de fundo"
+
+msgid "Bottom"
+msgstr "Inferior"
+
+msgid "Center"
+msgstr "Centro"
+
+msgid "Contain"
+msgstr "Conter"
+
+msgid "Cover"
+msgstr "Cobrir"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Não afeta a fonte do terminal na configuração [aparência]"
+
+msgid "Enable"
+msgstr "Ativar"
+
+msgid "Enable UI font replace"
+msgstr "Ativar substituição da fonte da interface"
+
+msgid "Enable background"
+msgstr "Ativar imagem de fundo"
+
+msgid "Extra Settings"
+msgstr "Definições extra"
+
+msgid "Fix close button font"
+msgstr "Corrigir fonte do botão de fechar"
+
+msgid "Folder Mode"
+msgstr "Modo pasta"
+
+msgid "Fullscreen position"
+msgstr "Posição em ecrã inteiro"
+
+msgid "Fullscreen type"
+msgstr "Tipo de ecrã inteiro"
+
+msgid "Group list transparent"
+msgstr "Lista de grupos transparente"
+
+msgid "Hide main menu footer"
+msgstr "Ocultar rodapé do menu principal"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Ocultar rodapé do menu principal (barra inferior)"
+
+msgid "Home page footer transparent"
+msgstr "Rodapé da página inicial transparente"
+
+msgid "How to choose background"
+msgstr "Como escolher o fundo"
+
+msgid "Inactive split panel dimming"
+msgstr "Escurecer painel dividido ativo"
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "No Repeat"
+msgstr "Não repetir"
+
+msgid "Others"
+msgstr "Outros"
+
+msgid "Pick File"
+msgstr "Escolher ficheiro"
+
+msgid "Pick Folder"
+msgstr "Escolher pasta"
+
+msgid "Preview"
+msgstr "Pré-visualizar"
+
+msgid "Random"
+msgstr "Aleatório"
+
+msgid "Relative path begins with ../../../data"
+msgstr "O caminho relativo começa com ../../../data"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat type"
+msgstr "Tipo de repetição"
+
+msgid "Reset"
+msgstr "Repor"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Restaurar a fonte predefinida do botão de fechar separadores"
+
+msgid "Reverse"
+msgstr "Inverso"
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "Sequence"
+msgstr "Ordem"
+
+msgid "Sidebar transparent"
+msgstr "Barra lateral transparente"
+
+msgid "Simple"
+msgstr "Simples"
+
+msgid "Slideshow interval"
+msgstr "Intervalo da apresentação"
+
+msgid "Slideshow interval (second)"
+msgstr "Intervalo da apresentação (segundos)"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "TabBar preserve space width"
+msgstr "Largura reservada da barra de separadores"
+
+msgid "Top"
+msgstr "Superior"
+
+msgid "UI Font"
+msgstr "Fonte"
+
+msgid "UI Font Family"
+msgstr "Fonte da interface"
+
+msgid "Unit: %, 0 = default"
+msgstr "Unidade: %, 0 = predefinido"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Unidade: %, 0 = desativado"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Unidade: %, 0 = desativado, aplicar ao menu inicial e outras listas de grupos"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Unidade: %, 0 = desativado, aplicar à barra lateral de perfis"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Unidade: %, 100 = desativado"
+
+msgid "Unit: %, 50 = default"
+msgstr "Unidade: %, 50 = predefinido"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Unidade: %, 50 = desativado, aplicar ao rodapé da página inicial"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Unidade: grau, 0 = desativado"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Unidade: px, 0 = desativado"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Unidade: px, 138 = desativado"

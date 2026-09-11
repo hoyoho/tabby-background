@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Dæmp inaktivt opdelt panel"
+
+msgid "Add"
+msgstr "Tilføj"
+
+msgid "Advanced"
+msgstr "Avanceret"
+
+msgid "Background"
+msgstr "Baggrund"
+
+msgid "Background Filters"
+msgstr "Baggrundsfiltre"
+
+msgid "Background blur"
+msgstr "Baggrundssløring"
+
+msgid "Background brightness"
+msgstr "Baggrundslysstyrke"
+
+msgid "Background choose type"
+msgstr "Baggrundsvalgtype"
+
+msgid "Background contrast"
+msgstr "Baggrundskontrast"
+
+msgid "Background grayscale"
+msgstr "Baggrundsgråtoner"
+
+msgid "Background hue rotate"
+msgstr "Baggrundsfarvetone rotation"
+
+msgid "Background image master switch"
+msgstr "Hovedkontakt for baggrundsbillede"
+
+msgid "Background invert"
+msgstr "Inverter baggrund"
+
+msgid "Background mode"
+msgstr "Baggrundstilstand"
+
+msgid "Background opacity"
+msgstr "Baggrundsgennemsigtighed"
+
+msgid "Background path"
+msgstr "Sti til baggrundsbillede"
+
+msgid "Background saturate"
+msgstr "Baggrundsmætning"
+
+msgid "Background sepia"
+msgstr "Baggrundssepia"
+
+msgid "Bottom"
+msgstr "Nederst"
+
+msgid "Center"
+msgstr "Midten"
+
+msgid "Contain"
+msgstr "Tilpas"
+
+msgid "Cover"
+msgstr "Dæk"
+
+msgid "Delete"
+msgstr "Slet"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Påvirker ikke terminalens skrifttype i konfigurationen [udseende]"
+
+msgid "Enable"
+msgstr "Aktivér"
+
+msgid "Enable UI font replace"
+msgstr "Aktivér udskiftning af grænsefladens skrifttype"
+
+msgid "Enable background"
+msgstr "Aktivér baggrundsbillede"
+
+msgid "Extra Settings"
+msgstr "Ekstra indstillinger"
+
+msgid "Fix close button font"
+msgstr "Ret lukkeknappens skrifttype"
+
+msgid "Folder Mode"
+msgstr "Mappetilstand"
+
+msgid "Fullscreen position"
+msgstr "Fuldskærmsplacering"
+
+msgid "Fullscreen type"
+msgstr "Fuldskærmstype"
+
+msgid "Group list transparent"
+msgstr "Gennemsigtig gruppeliste"
+
+msgid "Hide main menu footer"
+msgstr "Skjul hovedmenufoden"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Skjul hovedmenufoden (nederste bjælke)"
+
+msgid "Home page footer transparent"
+msgstr "Gennemsigtig sidefod på startsiden"
+
+msgid "How to choose background"
+msgstr "Sådan vælges baggrunden"
+
+msgid "Inactive split panel dimming"
+msgstr "Dæmp aktivt opdelt panel"
+
+msgid "Left"
+msgstr "Venstre"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "No Repeat"
+msgstr "Gentag ikke"
+
+msgid "Others"
+msgstr "Andet"
+
+msgid "Pick File"
+msgstr "Vælg fil"
+
+msgid "Pick Folder"
+msgstr "Vælg mappe"
+
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+msgid "Random"
+msgstr "Tilfældig"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relativ sti begynder med ../../../data"
+
+msgid "Repeat"
+msgstr "Gentag"
+
+msgid "Repeat type"
+msgstr "Gentagelsestype"
+
+msgid "Reset"
+msgstr "Nulstil"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Gendan fanernes lukkeknap til standardskrifttypen"
+
+msgid "Reverse"
+msgstr "Omvendt"
+
+msgid "Right"
+msgstr "Højre"
+
+msgid "Sequence"
+msgstr "Rækkefølge"
+
+msgid "Sidebar transparent"
+msgstr "Gennemsigtig sidebjælke"
+
+msgid "Simple"
+msgstr "Enkel"
+
+msgid "Slideshow interval"
+msgstr "Slideshow-interval"
+
+msgid "Slideshow interval (second)"
+msgstr "Slideshow-interval (sekunder)"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "TabBar preserve space width"
+msgstr "Reserveret bredde til fanebjælken"
+
+msgid "Top"
+msgstr "Øverst"
+
+msgid "UI Font"
+msgstr "Skrifttype"
+
+msgid "UI Font Family"
+msgstr "Grænsefladens skrifttype"
+
+msgid "Unit: %, 0 = default"
+msgstr "Enhed: %, 0 = standard"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Enhed: %, 0 = deaktiveret"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Enhed: %, 0 = deaktiveret, anvend på startmenuen og andre gruppelister"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Enhed: %, 0 = deaktiveret, anvend på profilsidebjælken"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Enhed: %, 100 = deaktiveret"
+
+msgid "Unit: %, 50 = default"
+msgstr "Enhed: %, 50 = standard"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Enhed: %, 50 = deaktiveret, anvend på startsidens sidefod"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Enhed: grader, 0 = deaktiveret"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Enhed: px, 0 = deaktiveret"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Enhed: px, 138 = deaktiveret"

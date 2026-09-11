@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Etkin olmayan bölünmüş paneli karart"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+msgid "Background"
+msgstr "Arka plan"
+
+msgid "Background Filters"
+msgstr "Arka plan filtreleri"
+
+msgid "Background blur"
+msgstr "Arka plan bulanıklığı"
+
+msgid "Background brightness"
+msgstr "Arka plan parlaklığı"
+
+msgid "Background choose type"
+msgstr "Arka plan seçim türü"
+
+msgid "Background contrast"
+msgstr "Arka plan kontrastı"
+
+msgid "Background grayscale"
+msgstr "Arka plan gri tonlaması"
+
+msgid "Background hue rotate"
+msgstr "Arka plan ton döndürme"
+
+msgid "Background image master switch"
+msgstr "Arka plan resmi ana anahtarı"
+
+msgid "Background invert"
+msgstr "Arka planı ters çevir"
+
+msgid "Background mode"
+msgstr "Arka plan modu"
+
+msgid "Background opacity"
+msgstr "Arka plan opaklığı"
+
+msgid "Background path"
+msgstr "Arka plan resmi yolu"
+
+msgid "Background saturate"
+msgstr "Arka plan doygunluğu"
+
+msgid "Background sepia"
+msgstr "Arka plan sepya"
+
+msgid "Bottom"
+msgstr "Alt"
+
+msgid "Center"
+msgstr "Orta"
+
+msgid "Contain"
+msgstr "Sığdır"
+
+msgid "Cover"
+msgstr "Kapla"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "[Görünüm] yapılandırmasındaki terminal yazı tipini etkilemez"
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Enable UI font replace"
+msgstr "Arayüz yazı tipi değişimini etkinleştir"
+
+msgid "Enable background"
+msgstr "Arka plan resmini etkinleştir"
+
+msgid "Extra Settings"
+msgstr "Ek ayarlar"
+
+msgid "Fix close button font"
+msgstr "Kapat düğmesi yazı tipini düzelt"
+
+msgid "Folder Mode"
+msgstr "Klasör modu"
+
+msgid "Fullscreen position"
+msgstr "Tam ekran konumu"
+
+msgid "Fullscreen type"
+msgstr "Tam ekran türü"
+
+msgid "Group list transparent"
+msgstr "Grup listesi şeffaf"
+
+msgid "Hide main menu footer"
+msgstr "Ana menü altbilgisini gizle"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Ana menü altbilgisini gizle (alt çubuk)"
+
+msgid "Home page footer transparent"
+msgstr "Ana sayfa altbilgisi şeffaf"
+
+msgid "How to choose background"
+msgstr "Arka plan nasıl seçilir"
+
+msgid "Inactive split panel dimming"
+msgstr "Etkin bölünmüş paneli karart"
+
+msgid "Left"
+msgstr "Sol"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "No Repeat"
+msgstr "Tekrarlama"
+
+msgid "Others"
+msgstr "Diğer"
+
+msgid "Pick File"
+msgstr "Dosya seç"
+
+msgid "Pick Folder"
+msgstr "Klasör seç"
+
+msgid "Preview"
+msgstr "Önizleme"
+
+msgid "Random"
+msgstr "Rastgele"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Göreli yol ../../../data ile başlar"
+
+msgid "Repeat"
+msgstr "Tekrarla"
+
+msgid "Repeat type"
+msgstr "Tekrar türü"
+
+msgid "Reset"
+msgstr "Sıfırla"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Sekme kapatma düğmesini varsayılan yazı tipine döndür"
+
+msgid "Reverse"
+msgstr "Ters"
+
+msgid "Right"
+msgstr "Sağ"
+
+msgid "Sequence"
+msgstr "Sıra"
+
+msgid "Sidebar transparent"
+msgstr "Kenar çubuğu şeffaf"
+
+msgid "Simple"
+msgstr "Basit"
+
+msgid "Slideshow interval"
+msgstr "Slayt gösterisi aralığı"
+
+msgid "Slideshow interval (second)"
+msgstr "Slayt gösterisi aralığı (saniye)"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "TabBar preserve space width"
+msgstr "Sekme çubuğu ayrılan genişlik"
+
+msgid "Top"
+msgstr "Üst"
+
+msgid "UI Font"
+msgstr "Yazı tipi"
+
+msgid "UI Font Family"
+msgstr "Arayüz yazı tipi"
+
+msgid "Unit: %, 0 = default"
+msgstr "Birim: %, 0 = varsayılan"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Birim: %, 0 = devre dışı"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Birim: %, 0 = devre dışı, ana menüye ve diğer grup listelerine uygula"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Birim: %, 0 = devre dışı, profil kenar çubuğuna uygula"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Birim: %, 100 = devre dışı"
+
+msgid "Unit: %, 50 = default"
+msgstr "Birim: %, 50 = varsayılan"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Birim: %, 50 = devre dışı, ana sayfa altbilgisine uygula"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Birim: derece, 0 = devre dışı"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Birim: px, 0 = devre dışı"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Birim: px, 138 = devre dışı"

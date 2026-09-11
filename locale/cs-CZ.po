@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Ztlumit neaktivní rozdělený panel"
+
+msgid "Add"
+msgstr "Přidat"
+
+msgid "Advanced"
+msgstr "Rozšířené"
+
+msgid "Background"
+msgstr "Pozadí"
+
+msgid "Background Filters"
+msgstr "Filtry pozadí"
+
+msgid "Background blur"
+msgstr "Rozmazání pozadí"
+
+msgid "Background brightness"
+msgstr "Jas pozadí"
+
+msgid "Background choose type"
+msgstr "Typ výběru pozadí"
+
+msgid "Background contrast"
+msgstr "Kontrast pozadí"
+
+msgid "Background grayscale"
+msgstr "Odstíny šedi pozadí"
+
+msgid "Background hue rotate"
+msgstr "Otočení odstínu pozadí"
+
+msgid "Background image master switch"
+msgstr "Hlavní přepínač obrázku pozadí"
+
+msgid "Background invert"
+msgstr "Invertovat pozadí"
+
+msgid "Background mode"
+msgstr "Režim pozadí"
+
+msgid "Background opacity"
+msgstr "Neprůhlednost pozadí"
+
+msgid "Background path"
+msgstr "Cesta k obrázku pozadí"
+
+msgid "Background saturate"
+msgstr "Sytost pozadí"
+
+msgid "Background sepia"
+msgstr "Sépia pozadí"
+
+msgid "Bottom"
+msgstr "Dolů"
+
+msgid "Center"
+msgstr "Střed"
+
+msgid "Contain"
+msgstr "Vejít se"
+
+msgid "Cover"
+msgstr "Vyplnit"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Neovlivňuje písmo terminálu v konfiguraci [vzhled]"
+
+msgid "Enable"
+msgstr "Povolit"
+
+msgid "Enable UI font replace"
+msgstr "Povolit nahrazení písma rozhraní"
+
+msgid "Enable background"
+msgstr "Povolit obrázek pozadí"
+
+msgid "Extra Settings"
+msgstr "Další nastavení"
+
+msgid "Fix close button font"
+msgstr "Opravit písmo tlačítka zavření"
+
+msgid "Folder Mode"
+msgstr "Režim složky"
+
+msgid "Fullscreen position"
+msgstr "Pozice na celou obrazovku"
+
+msgid "Fullscreen type"
+msgstr "Typ na celou obrazovku"
+
+msgid "Group list transparent"
+msgstr "Průhledný seznam skupin"
+
+msgid "Hide main menu footer"
+msgstr "Skrýt zápatí hlavního menu"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Skrýt zápatí hlavního menu (spodní lišta)"
+
+msgid "Home page footer transparent"
+msgstr "Průhledné zápatí domovské stránky"
+
+msgid "How to choose background"
+msgstr "Jak vybrat pozadí"
+
+msgid "Inactive split panel dimming"
+msgstr "Ztlumit aktivní rozdělený panel"
+
+msgid "Left"
+msgstr "Vlevo"
+
+msgid "Name"
+msgstr "Název"
+
+msgid "No Repeat"
+msgstr "Neopakovat"
+
+msgid "Others"
+msgstr "Ostatní"
+
+msgid "Pick File"
+msgstr "Vybrat soubor"
+
+msgid "Pick Folder"
+msgstr "Vybrat složku"
+
+msgid "Preview"
+msgstr "Náhled"
+
+msgid "Random"
+msgstr "Náhodně"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relativní cesta začíná ../../../data"
+
+msgid "Repeat"
+msgstr "Opakovat"
+
+msgid "Repeat type"
+msgstr "Typ opakování"
+
+msgid "Reset"
+msgstr "Obnovit"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Obnovit výchozí písmo tlačítka zavření karet"
+
+msgid "Reverse"
+msgstr "Obráceně"
+
+msgid "Right"
+msgstr "Vpravo"
+
+msgid "Sequence"
+msgstr "Pořadí"
+
+msgid "Sidebar transparent"
+msgstr "Průhledný postranní panel"
+
+msgid "Simple"
+msgstr "Jednoduché"
+
+msgid "Slideshow interval"
+msgstr "Interval prezentace"
+
+msgid "Slideshow interval (second)"
+msgstr "Interval prezentace (sekundy)"
+
+msgid "Style"
+msgstr "Styl"
+
+msgid "TabBar preserve space width"
+msgstr "Rezervovaná šířka lišty karet"
+
+msgid "Top"
+msgstr "Nahoru"
+
+msgid "UI Font"
+msgstr "Písmo"
+
+msgid "UI Font Family"
+msgstr "Písmo rozhraní"
+
+msgid "Unit: %, 0 = default"
+msgstr "Jednotka: %, 0 = výchozí"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Jednotka: %, 0 = zakázáno"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Jednotka: %, 0 = zakázáno, použít na domovské menu a další seznamy skupin"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Jednotka: %, 0 = zakázáno, použít na postranní panel profilů"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Jednotka: %, 100 = zakázáno"
+
+msgid "Unit: %, 50 = default"
+msgstr "Jednotka: %, 50 = výchozí"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Jednotka: %, 50 = zakázáno, použít na zápatí domovské stránky"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Jednotka: stupně, 0 = zakázáno"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Jednotka: px, 0 = zakázáno"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Jednotka: px, 138 = zakázáno"

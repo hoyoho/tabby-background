@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Verdof onaktiewe verdeelde paneel"
+
+msgid "Add"
+msgstr "Voeg by"
+
+msgid "Advanced"
+msgstr "Gevorderd"
+
+msgid "Background"
+msgstr "Agtergrond"
+
+msgid "Background Filters"
+msgstr "Agtergrondfilters"
+
+msgid "Background blur"
+msgstr "Agtergrondvervaging"
+
+msgid "Background brightness"
+msgstr "Agtergrondhelderheid"
+
+msgid "Background choose type"
+msgstr "Agtergrondkeuse-tipe"
+
+msgid "Background contrast"
+msgstr "Agtergrondkontras"
+
+msgid "Background grayscale"
+msgstr "Agtergrondgrysskaal"
+
+msgid "Background hue rotate"
+msgstr "Agtergrondkleurtoon-rotasie"
+
+msgid "Background image master switch"
+msgstr "Hoofskakelaar vir agtergrondprent"
+
+msgid "Background invert"
+msgstr "Keer agtergrond om"
+
+msgid "Background mode"
+msgstr "Agtergrondmodus"
+
+msgid "Background opacity"
+msgstr "Agtergrondondeursigtigheid"
+
+msgid "Background path"
+msgstr "Agtergrondprent-pad"
+
+msgid "Background saturate"
+msgstr "Agtergrondversadiging"
+
+msgid "Background sepia"
+msgstr "Agtergrondsepia"
+
+msgid "Bottom"
+msgstr "Onder"
+
+msgid "Center"
+msgstr "Middel"
+
+msgid "Contain"
+msgstr "Inpas"
+
+msgid "Cover"
+msgstr "Dek"
+
+msgid "Delete"
+msgstr "Verwyder"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Beïnvloed nie die terminaal se lettertipe in die [voorkoms]-konfigurasie nie"
+
+msgid "Enable"
+msgstr "Aktiveer"
+
+msgid "Enable UI font replace"
+msgstr "Aktiveer vervanging van koppelvlak-lettertipe"
+
+msgid "Enable background"
+msgstr "Aktiveer agtergrondprent"
+
+msgid "Extra Settings"
+msgstr "Bykomende instellings"
+
+msgid "Fix close button font"
+msgstr "Herstel die sluitknoppie se lettertipe"
+
+msgid "Folder Mode"
+msgstr "Vouermodus"
+
+msgid "Fullscreen position"
+msgstr "Volskermposisie"
+
+msgid "Fullscreen type"
+msgstr "Volskermtipe"
+
+msgid "Group list transparent"
+msgstr "Deursigtige groeplyste"
+
+msgid "Hide main menu footer"
+msgstr "Versteek hoofkieslys se voetskrif"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Versteek hoofkieslys se voetskrif (onderste balk)"
+
+msgid "Home page footer transparent"
+msgstr "Deursigtige tuisblad-voetskrif"
+
+msgid "How to choose background"
+msgstr "Hoe om die agtergrond te kies"
+
+msgid "Inactive split panel dimming"
+msgstr "Verdof aktiewe verdeelde paneel"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "No Repeat"
+msgstr "Moenie herhaal nie"
+
+msgid "Others"
+msgstr "Ander"
+
+msgid "Pick File"
+msgstr "Kies lêer"
+
+msgid "Pick Folder"
+msgstr "Kies vouer"
+
+msgid "Preview"
+msgstr "Voorskou"
+
+msgid "Random"
+msgstr "Willekeurig"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relatiewe pad begin met ../../../data"
+
+msgid "Repeat"
+msgstr "Herhaal"
+
+msgid "Repeat type"
+msgstr "Herhalingstipe"
+
+msgid "Reset"
+msgstr "Herstel"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Herstel oortjies se sluitknoppie na versteklettertipe"
+
+msgid "Reverse"
+msgstr "Omgekeerd"
+
+msgid "Right"
+msgstr "Regs"
+
+msgid "Sequence"
+msgstr "Orde"
+
+msgid "Sidebar transparent"
+msgstr "Deursigtige sybalk"
+
+msgid "Simple"
+msgstr "Eenvoudig"
+
+msgid "Slideshow interval"
+msgstr "Skyfievertoning-interval"
+
+msgid "Slideshow interval (second)"
+msgstr "Skyfievertoning-interval (sekondes)"
+
+msgid "Style"
+msgstr "Styl"
+
+msgid "TabBar preserve space width"
+msgstr "Gereserveerde breedte van oortjie-balk"
+
+msgid "Top"
+msgstr "Bo"
+
+msgid "UI Font"
+msgstr "Lettertipe"
+
+msgid "UI Font Family"
+msgstr "Koppelvlak-lettertipe"
+
+msgid "Unit: %, 0 = default"
+msgstr "Eenheid: %, 0 = verstek"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Eenheid: %, 0 = gedeaktiveer"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Eenheid: %, 0 = gedeaktiveer, pas toe op tuislys en ander groeplyste"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Eenheid: %, 0 = gedeaktiveer, pas toe op die profiel-sybalk"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Eenheid: %, 100 = gedeaktiveer"
+
+msgid "Unit: %, 50 = default"
+msgstr "Eenheid: %, 50 = verstek"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Eenheid: %, 50 = gedeaktiveer, pas toe op tuisblad-voetskrif"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Eenheid: grade, 0 = gedeaktiveer"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Eenheid: px, 0 = gedeaktiveer"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Eenheid: px, 138 = gedeaktiveer"

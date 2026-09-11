@@ -1,96 +1,76 @@
+import afZA from "../locale/af-ZA.po";
+import bgBG from "../locale/bg-BG.po";
+import csCZ from "../locale/cs-CZ.po";
+import daDK from "../locale/da-DK.po";
+import deDE from "../locale/de-DE.po";
+import enGB from "../locale/en-GB.po";
+import enUS from "../locale/en-US.po";
+import esES from "../locale/es-ES.po";
+import frFR from "../locale/fr-FR.po";
+import hrHR from "../locale/hr-HR.po";
+import idID from "../locale/id-ID.po";
+import itIT from "../locale/it-IT.po";
+import jaJP from "../locale/ja-JP.po";
+import koKR from "../locale/ko-KR.po";
+import plPL from "../locale/pl-PL.po";
+import ptBR from "../locale/pt-BR.po";
+import ptPT from "../locale/pt-PT.po";
+import ruRU from "../locale/ru-RU.po";
+import srSP from "../locale/sr-SP.po";
+import svSE from "../locale/sv-SE.po";
+import trTR from "../locale/tr-TR.po";
+import ukUA from "../locale/uk-UA.po";
+import zhCN from "../locale/zh-CN.po";
+import zhTW from "../locale/zh-TW.po";
+
 type BackgroundPluginTranslations = Record<string, string>;
 
-export const translations: [string, BackgroundPluginTranslations][] = [
-  [
-    "zh-CN",
-    {
-      "Restore the tab closing button to default font": "将标签页关闭按钮恢复为默认字体",
-      "Background blur": "背景模糊度",
-      "Background brightness": "背景亮度",
-      "Background contrast": "背景对比度",
-      "Background Filters": "背景特效",
-      "Background grayscale": "背景灰度",
-      "Background hue rotate": "背景色相旋转",
-      "Background image master switch": "背景图片总开关",
-      "Background invert": "背景反转",
-      "Background opacity": "背景不透明度",
-      "Background path": "背景图片路径",
-      "Background saturate": "背景饱和度",
-      "Background sepia": "背景褐色",
-      "Background show type": "背景显示类型",
-      "Background": "背景",
-      "Center": "中央",
-      "Contain": "适应",
-      "Cover": "填充",
-      "Do not affect the terminal font in the [appearance] configuration": "不影响【外观】配置中的终端字体",
-      "Drop shadow blur": "阴影模糊",
-      "Drop shadow color": "阴影颜色",
-      "Drop Shadow Parameters": "背景阴影参数",
-      "Drop shadow X offset": "阴影X偏移",
-      "Drop shadow Y offset": "阴影Y偏移",
-      "Enable background": "是否启用背景图片",
-      "Enable drop shadow": "启用背景阴影",
-      "Enable tabs parameter override": "启用标签页参数覆盖",
-      "Enable UI font replace": "是否启用界面字体替换",
-      "Extra Settings": "额外设置",
-      "Fix close button font": "修复标签页关闭按钮字体",
-      "Float Parameters": "浮动参数",
-      "Float size": "浮动大小",
-      "Float X align": "浮动X对齐",
-      "Float X offset": "浮动X偏移",
-      "Float Y align": "浮动Y对齐",
-      "Float Y offset": "浮动Y偏移",
-      "Float": "浮动",
-      "Fullscreen type": "全屏类型",
-      "Fullscreen": "全屏",
-      "Fullscreen position": "全屏位置",
-      "Group list transparent": "分组列表透明度",
-      "Home page footer transparent": "主页页脚透明度",
-      "No Repeat": "不重复",
-      "Relative path begins with ../../../data": "相对路径从../../../data开始",
-      "Repeat type": "重复类型",
-      "Repeat": "重复",
-      "Tabs dynamic width min": "动态标签页宽度最小宽度",
-      "Tabs fixed width": "固定标签页宽度",
-      "Terminal toolbar transparent": "终端工具栏透明度",
-      "UI Font Family": "界面字体",
-      "UI Font": "字体",
-      "Unit: %, 0 = disable, Apply to home menu and other group list": "单位：%，0 = 禁用，应用到首页菜单和其他分组列表",
-      "Unit: %, 0 = disable, Apply to terminal toolbar": "单位：%，0 = 禁用，应用到终端工具栏",
-      "Unit: %, 0 = disable": "单位：%，0 = 禁用",
-      "Unit: %, 100 = disable": "单位：%，100 = 禁用",
-      "Unit: %, 50 = disable, Apply to home page footer": "单位：%，50 = 禁用，应用到主页页脚",
-      "Unit: degree, 0 = disable": "单位：度，0 = 禁用",
-      "Unit: px, 0 = disable": "单位：像素，0 = 禁用",
-      "Unit: px": "单位：像素",
-      "Use RGBA (#FF0000A0) or color name(red, green, ...)": "使用RGBA（#FF0000A0）或者颜色名字（red, green, ...）",
-      "Others": "其他",
-      "Unit: %, 50 = default": "单位：%，50 = 默认",
-      "Unit: %, 0 = default": "单位：%，0 = 默认",
-      "Inactive split panel dimming": "非活动拆分页面变暗",
-      "Active split panel dimming": "活动拆分页面变暗",
-      "Background applied!": "背景已应用！",
-      "TabBar preserve space width": "标签栏预留宽度",
-      "Unit: px, 138 = disable": "单位：像素，138 = 禁用",
-      "Background switch type": "背景切换类型",
-      "When switch background": "什么时候切换背景",
-      "Slideshow": "幻灯片",
-      "Slideshow interval": "幻灯片间隔",
-      "Slideshow interval (second)": "幻灯片间隔（秒）",
-      "Background choose type": "背景选择方式",
-      "How to choose background": "如何抽取背景",
-      "Sequence": "顺序",
-      "Random": "随机",
-      "Reverse": "倒序",
-      "Simple": "简单",
-      "Background mode": "背景模式",
-      "Hide main menu footer": "隐藏主界面页脚",
-      "Hide the main menu footer(bottom bar)": "隐藏主界面页脚（最下面的长条）",
-      "Preview": "预览",
-      "Pick File": "选择文件",
-      "Pick Folder": "选择目录",
-      "Folder Mode": "目录模式",
-      "Reset": "重置",
-    },
-  ],
+/**
+ * `po-gettext-loader` emits the parsed gettext structure:
+ * `{ translations: { "": { msgid: { msgstr: [value] } } } }`.
+ * Flatten it into the `{ msgid: value }` shape ngx-translate expects.
+ */
+function flattenPo(po: any): BackgroundPluginTranslations {
+  const result: BackgroundPluginTranslations = {};
+  const table = po?.translations?.[""] ?? {};
+  for (const key of Object.keys(table)) {
+    if (!key) {
+      continue;
+    }
+    const value = table[key]?.msgstr?.[0];
+    if (value) {
+      result[key] = value;
+    }
+  }
+  return result;
+}
+
+const poByLang: [string, any][] = [
+  ["af-ZA", afZA],
+  ["bg-BG", bgBG],
+  ["cs-CZ", csCZ],
+  ["da-DK", daDK],
+  ["de-DE", deDE],
+  ["en-GB", enGB],
+  ["en-US", enUS],
+  ["es-ES", esES],
+  ["fr-FR", frFR],
+  ["hr-HR", hrHR],
+  ["id-ID", idID],
+  ["it-IT", itIT],
+  ["ja-JP", jaJP],
+  ["ko-KR", koKR],
+  ["pl-PL", plPL],
+  ["pt-BR", ptBR],
+  ["pt-PT", ptPT],
+  ["ru-RU", ruRU],
+  ["sr-SP", srSP],
+  ["sv-SE", svSE],
+  ["tr-TR", trTR],
+  ["uk-UA", ukUA],
+  ["zh-CN", zhCN],
+  ["zh-TW", zhTW],
 ];
+
+export const translations: [string, BackgroundPluginTranslations][] =
+  poByLang.map(([lang, po]) => [lang, flattenPo(po)]);

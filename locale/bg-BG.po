@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Затъмни неактивния разделен панел"
+
+msgid "Add"
+msgstr "Добавяне"
+
+msgid "Advanced"
+msgstr "Разширени"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Background Filters"
+msgstr "Филтри за фон"
+
+msgid "Background blur"
+msgstr "Замъгляване на фона"
+
+msgid "Background brightness"
+msgstr "Яркост на фона"
+
+msgid "Background choose type"
+msgstr "Тип на избор на фон"
+
+msgid "Background contrast"
+msgstr "Контраст на фона"
+
+msgid "Background grayscale"
+msgstr "Оттенъци на сивото на фона"
+
+msgid "Background hue rotate"
+msgstr "Завъртане на оттенъка на фона"
+
+msgid "Background image master switch"
+msgstr "Главен превключвател на фоновото изображение"
+
+msgid "Background invert"
+msgstr "Инвертиране на фона"
+
+msgid "Background mode"
+msgstr "Режим на фона"
+
+msgid "Background opacity"
+msgstr "Непрозрачност на фона"
+
+msgid "Background path"
+msgstr "Път до фоновото изображение"
+
+msgid "Background saturate"
+msgstr "Наситеност на фона"
+
+msgid "Background sepia"
+msgstr "Сепия на фона"
+
+msgid "Bottom"
+msgstr "Долу"
+
+msgid "Center"
+msgstr "Център"
+
+msgid "Contain"
+msgstr "Побиране"
+
+msgid "Cover"
+msgstr "Покриване"
+
+msgid "Delete"
+msgstr "Изтриване"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Не влияе на шрифта на терминала в конфигурацията [външен вид]"
+
+msgid "Enable"
+msgstr "Активиране"
+
+msgid "Enable UI font replace"
+msgstr "Активиране на замяната на шрифта на интерфейса"
+
+msgid "Enable background"
+msgstr "Активиране на фоновото изображение"
+
+msgid "Extra Settings"
+msgstr "Допълнителни настройки"
+
+msgid "Fix close button font"
+msgstr "Коригиране на шрифта на бутона за затваряне"
+
+msgid "Folder Mode"
+msgstr "Режим на папка"
+
+msgid "Fullscreen position"
+msgstr "Позиция на цял екран"
+
+msgid "Fullscreen type"
+msgstr "Тип на цял екран"
+
+msgid "Group list transparent"
+msgstr "Прозрачен списък с групи"
+
+msgid "Hide main menu footer"
+msgstr "Скриване на долния колонтитул на главното меню"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Скриване на долния колонтитул на главното меню (долна лента)"
+
+msgid "Home page footer transparent"
+msgstr "Прозрачен долен колонтитул на началната страница"
+
+msgid "How to choose background"
+msgstr "Как да изберете фон"
+
+msgid "Inactive split panel dimming"
+msgstr "Затъмни активния разделен панел"
+
+msgid "Left"
+msgstr "Ляво"
+
+msgid "Name"
+msgstr "Име"
+
+msgid "No Repeat"
+msgstr "Без повторение"
+
+msgid "Others"
+msgstr "Друго"
+
+msgid "Pick File"
+msgstr "Избор на файл"
+
+msgid "Pick Folder"
+msgstr "Избор на папка"
+
+msgid "Preview"
+msgstr "Преглед"
+
+msgid "Random"
+msgstr "Случайно"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Относителният път започва с ../../../data"
+
+msgid "Repeat"
+msgstr "Повторение"
+
+msgid "Repeat type"
+msgstr "Тип на повторение"
+
+msgid "Reset"
+msgstr "Нулиране"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Възстановяване на шрифта по подразбиране на бутона за затваряне на разделите"
+
+msgid "Reverse"
+msgstr "Обратно"
+
+msgid "Right"
+msgstr "Дясно"
+
+msgid "Sequence"
+msgstr "Ред"
+
+msgid "Sidebar transparent"
+msgstr "Прозрачна странична лента"
+
+msgid "Simple"
+msgstr "Просто"
+
+msgid "Slideshow interval"
+msgstr "Интервал на слайдшоу"
+
+msgid "Slideshow interval (second)"
+msgstr "Интервал на слайдшоу (секунди)"
+
+msgid "Style"
+msgstr "Стил"
+
+msgid "TabBar preserve space width"
+msgstr "Резервирана ширина на лентата с раздели"
+
+msgid "Top"
+msgstr "Горе"
+
+msgid "UI Font"
+msgstr "Шрифт"
+
+msgid "UI Font Family"
+msgstr "Шрифт на интерфейса"
+
+msgid "Unit: %, 0 = default"
+msgstr "Единица: %, 0 = по подразбиране"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Единица: %, 0 = изключено"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Единица: %, 0 = изключено, приложи към началното меню и други списъци с групи"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Единица: %, 0 = изключено, приложи към страничната лента на профилите"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Единица: %, 100 = изключено"
+
+msgid "Unit: %, 50 = default"
+msgstr "Единица: %, 50 = по подразбиране"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Единица: %, 50 = изключено, приложи към долния колонтитул на началната страница"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Единица: градуси, 0 = изключено"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Единица: px, 0 = изключено"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Единица: px, 138 = изключено"

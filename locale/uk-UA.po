@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Затемнити неактивну розділену панель"
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "Advanced"
+msgstr "Розширені"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Background Filters"
+msgstr "Фільтри фону"
+
+msgid "Background blur"
+msgstr "Розмиття фону"
+
+msgid "Background brightness"
+msgstr "Яскравість фону"
+
+msgid "Background choose type"
+msgstr "Тип вибору фону"
+
+msgid "Background contrast"
+msgstr "Контраст фону"
+
+msgid "Background grayscale"
+msgstr "Відтінки сірого фону"
+
+msgid "Background hue rotate"
+msgstr "Обертання відтінку фону"
+
+msgid "Background image master switch"
+msgstr "Головний перемикач фонового зображення"
+
+msgid "Background invert"
+msgstr "Інвертувати фон"
+
+msgid "Background mode"
+msgstr "Режим фону"
+
+msgid "Background opacity"
+msgstr "Непрозорість фону"
+
+msgid "Background path"
+msgstr "Шлях до фонового зображення"
+
+msgid "Background saturate"
+msgstr "Насиченість фону"
+
+msgid "Background sepia"
+msgstr "Сепія фону"
+
+msgid "Bottom"
+msgstr "Внизу"
+
+msgid "Center"
+msgstr "По центру"
+
+msgid "Contain"
+msgstr "Вмістити"
+
+msgid "Cover"
+msgstr "Заповнити"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Не впливає на шрифт термінала в конфігурації [вигляд]"
+
+msgid "Enable"
+msgstr "Увімкнути"
+
+msgid "Enable UI font replace"
+msgstr "Увімкнути заміну шрифту інтерфейсу"
+
+msgid "Enable background"
+msgstr "Увімкнути фонове зображення"
+
+msgid "Extra Settings"
+msgstr "Додаткові налаштування"
+
+msgid "Fix close button font"
+msgstr "Виправити шрифт кнопки закриття"
+
+msgid "Folder Mode"
+msgstr "Режим теки"
+
+msgid "Fullscreen position"
+msgstr "Позиція на весь екран"
+
+msgid "Fullscreen type"
+msgstr "Тип на весь екран"
+
+msgid "Group list transparent"
+msgstr "Прозорий список груп"
+
+msgid "Hide main menu footer"
+msgstr "Приховати нижній колонтитул головного меню"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Приховати нижній колонтитул головного меню (нижня панель)"
+
+msgid "Home page footer transparent"
+msgstr "Прозорий нижній колонтитул домашньої сторінки"
+
+msgid "How to choose background"
+msgstr "Як вибрати фон"
+
+msgid "Inactive split panel dimming"
+msgstr "Затемнити активну розділену панель"
+
+msgid "Left"
+msgstr "Ліворуч"
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "No Repeat"
+msgstr "Не повторювати"
+
+msgid "Others"
+msgstr "Інше"
+
+msgid "Pick File"
+msgstr "Вибрати файл"
+
+msgid "Pick Folder"
+msgstr "Вибрати теку"
+
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+msgid "Random"
+msgstr "Випадково"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Відносний шлях починається з ../../../data"
+
+msgid "Repeat"
+msgstr "Повторити"
+
+msgid "Repeat type"
+msgstr "Тип повтору"
+
+msgid "Reset"
+msgstr "Скинути"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Відновити типовий шрифт кнопки закриття вкладок"
+
+msgid "Reverse"
+msgstr "Зворотний"
+
+msgid "Right"
+msgstr "Праворуч"
+
+msgid "Sequence"
+msgstr "Порядок"
+
+msgid "Sidebar transparent"
+msgstr "Прозора бічна панель"
+
+msgid "Simple"
+msgstr "Простий"
+
+msgid "Slideshow interval"
+msgstr "Інтервал слайд-шоу"
+
+msgid "Slideshow interval (second)"
+msgstr "Інтервал слайд-шоу (секунди)"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "TabBar preserve space width"
+msgstr "Зарезервована ширина панелі вкладок"
+
+msgid "Top"
+msgstr "Вгорі"
+
+msgid "UI Font"
+msgstr "Шрифт"
+
+msgid "UI Font Family"
+msgstr "Шрифт інтерфейсу"
+
+msgid "Unit: %, 0 = default"
+msgstr "Одиниця: %, 0 = типово"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Одиниця: %, 0 = вимкнено"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Одиниця: %, 0 = вимкнено, застосувати до головного меню та інших списків груп"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Одиниця: %, 0 = вимкнено, застосувати до бічної панелі профілів"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Одиниця: %, 100 = вимкнено"
+
+msgid "Unit: %, 50 = default"
+msgstr "Одиниця: %, 50 = типово"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Одиниця: %, 50 = вимкнено, застосувати до нижнього колонтитула домашньої сторінки"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Одиниця: градуси, 0 = вимкнено"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Одиниця: px, 0 = вимкнено"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Одиниця: px, 138 = вимкнено"

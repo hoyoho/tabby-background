@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Przyciemnij nieaktywny podzielony panel"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+msgid "Background"
+msgstr "Tło"
+
+msgid "Background Filters"
+msgstr "Filtry tła"
+
+msgid "Background blur"
+msgstr "Rozmycie tła"
+
+msgid "Background brightness"
+msgstr "Jasność tła"
+
+msgid "Background choose type"
+msgstr "Typ wyboru tła"
+
+msgid "Background contrast"
+msgstr "Kontrast tła"
+
+msgid "Background grayscale"
+msgstr "Skala szarości tła"
+
+msgid "Background hue rotate"
+msgstr "Obrót barwy tła"
+
+msgid "Background image master switch"
+msgstr "Główny przełącznik obrazu tła"
+
+msgid "Background invert"
+msgstr "Odwróć tło"
+
+msgid "Background mode"
+msgstr "Tryb tła"
+
+msgid "Background opacity"
+msgstr "Krycie tła"
+
+msgid "Background path"
+msgstr "Ścieżka obrazu tła"
+
+msgid "Background saturate"
+msgstr "Nasycenie tła"
+
+msgid "Background sepia"
+msgstr "Sepia tła"
+
+msgid "Bottom"
+msgstr "Dół"
+
+msgid "Center"
+msgstr "Środek"
+
+msgid "Contain"
+msgstr "Dopasuj"
+
+msgid "Cover"
+msgstr "Wypełnij"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Nie wpływa na czcionkę terminala w konfiguracji [wygląd]"
+
+msgid "Enable"
+msgstr "Włącz"
+
+msgid "Enable UI font replace"
+msgstr "Włącz zastępowanie czcionki interfejsu"
+
+msgid "Enable background"
+msgstr "Włącz obraz tła"
+
+msgid "Extra Settings"
+msgstr "Ustawienia dodatkowe"
+
+msgid "Fix close button font"
+msgstr "Napraw czcionkę przycisku zamykania"
+
+msgid "Folder Mode"
+msgstr "Tryb folderu"
+
+msgid "Fullscreen position"
+msgstr "Pozycja pełnoekranowa"
+
+msgid "Fullscreen type"
+msgstr "Typ pełnoekranowy"
+
+msgid "Group list transparent"
+msgstr "Przezroczysta lista grup"
+
+msgid "Hide main menu footer"
+msgstr "Ukryj stopkę menu głównego"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Ukryj stopkę menu głównego (dolny pasek)"
+
+msgid "Home page footer transparent"
+msgstr "Przezroczysta stopka strony głównej"
+
+msgid "How to choose background"
+msgstr "Jak wybrać tło"
+
+msgid "Inactive split panel dimming"
+msgstr "Przyciemnij aktywny podzielony panel"
+
+msgid "Left"
+msgstr "Lewo"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "No Repeat"
+msgstr "Nie powtarzaj"
+
+msgid "Others"
+msgstr "Inne"
+
+msgid "Pick File"
+msgstr "Wybierz plik"
+
+msgid "Pick Folder"
+msgstr "Wybierz folder"
+
+msgid "Preview"
+msgstr "Podgląd"
+
+msgid "Random"
+msgstr "Losowo"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Ścieżka względna zaczyna się od ../../../data"
+
+msgid "Repeat"
+msgstr "Powtórz"
+
+msgid "Repeat type"
+msgstr "Typ powtórzenia"
+
+msgid "Reset"
+msgstr "Resetuj"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Przywróć domyślną czcionkę przycisku zamykania kart"
+
+msgid "Reverse"
+msgstr "Odwrotnie"
+
+msgid "Right"
+msgstr "Prawo"
+
+msgid "Sequence"
+msgstr "Kolejność"
+
+msgid "Sidebar transparent"
+msgstr "Przezroczysty pasek boczny"
+
+msgid "Simple"
+msgstr "Prosty"
+
+msgid "Slideshow interval"
+msgstr "Interwał pokazu slajdów"
+
+msgid "Slideshow interval (second)"
+msgstr "Interwał pokazu slajdów (sekundy)"
+
+msgid "Style"
+msgstr "Styl"
+
+msgid "TabBar preserve space width"
+msgstr "Zarezerwowana szerokość paska kart"
+
+msgid "Top"
+msgstr "Góra"
+
+msgid "UI Font"
+msgstr "Czcionka"
+
+msgid "UI Font Family"
+msgstr "Czcionka interfejsu"
+
+msgid "Unit: %, 0 = default"
+msgstr "Jednostka: %, 0 = domyślnie"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Jednostka: %, 0 = wyłączone"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Jednostka: %, 0 = wyłączone, zastosuj do menu głównego i innych list grup"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Jednostka: %, 0 = wyłączone, zastosuj do paska bocznego profili"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Jednostka: %, 100 = wyłączone"
+
+msgid "Unit: %, 50 = default"
+msgstr "Jednostka: %, 50 = domyślnie"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Jednostka: %, 50 = wyłączone, zastosuj do stopki strony głównej"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Jednostka: stopnie, 0 = wyłączone"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Jednostka: px, 0 = wyłączone"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Jednostka: px, 138 = wyłączone"

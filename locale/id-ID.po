@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Redupkan panel terbagi tidak aktif"
+
+msgid "Add"
+msgstr "Tambah"
+
+msgid "Advanced"
+msgstr "Lanjutan"
+
+msgid "Background"
+msgstr "Latar belakang"
+
+msgid "Background Filters"
+msgstr "Filter latar belakang"
+
+msgid "Background blur"
+msgstr "Buram latar belakang"
+
+msgid "Background brightness"
+msgstr "Kecerahan latar belakang"
+
+msgid "Background choose type"
+msgstr "Jenis pemilihan latar belakang"
+
+msgid "Background contrast"
+msgstr "Kontras latar belakang"
+
+msgid "Background grayscale"
+msgstr "Skala abu-abu latar belakang"
+
+msgid "Background hue rotate"
+msgstr "Rotasi hue latar belakang"
+
+msgid "Background image master switch"
+msgstr "Sakelar utama gambar latar belakang"
+
+msgid "Background invert"
+msgstr "Balikkan latar belakang"
+
+msgid "Background mode"
+msgstr "Mode latar belakang"
+
+msgid "Background opacity"
+msgstr "Opasitas latar belakang"
+
+msgid "Background path"
+msgstr "Jalur gambar latar belakang"
+
+msgid "Background saturate"
+msgstr "Saturasi latar belakang"
+
+msgid "Background sepia"
+msgstr "Sepia latar belakang"
+
+msgid "Bottom"
+msgstr "Bawah"
+
+msgid "Center"
+msgstr "Tengah"
+
+msgid "Contain"
+msgstr "Muat"
+
+msgid "Cover"
+msgstr "Tutupi"
+
+msgid "Delete"
+msgstr "Hapus"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Tidak memengaruhi font terminal di konfigurasi [tampilan]"
+
+msgid "Enable"
+msgstr "Aktifkan"
+
+msgid "Enable UI font replace"
+msgstr "Aktifkan penggantian font antarmuka"
+
+msgid "Enable background"
+msgstr "Aktifkan gambar latar belakang"
+
+msgid "Extra Settings"
+msgstr "Pengaturan tambahan"
+
+msgid "Fix close button font"
+msgstr "Perbaiki font tombol tutup"
+
+msgid "Folder Mode"
+msgstr "Mode folder"
+
+msgid "Fullscreen position"
+msgstr "Posisi layar penuh"
+
+msgid "Fullscreen type"
+msgstr "Jenis layar penuh"
+
+msgid "Group list transparent"
+msgstr "Daftar grup transparan"
+
+msgid "Hide main menu footer"
+msgstr "Sembunyikan footer menu utama"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Sembunyikan footer menu utama (bilah bawah)"
+
+msgid "Home page footer transparent"
+msgstr "Footer halaman beranda transparan"
+
+msgid "How to choose background"
+msgstr "Cara memilih latar belakang"
+
+msgid "Inactive split panel dimming"
+msgstr "Redupkan panel terbagi aktif"
+
+msgid "Left"
+msgstr "Kiri"
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "No Repeat"
+msgstr "Jangan ulangi"
+
+msgid "Others"
+msgstr "Lainnya"
+
+msgid "Pick File"
+msgstr "Pilih berkas"
+
+msgid "Pick Folder"
+msgstr "Pilih folder"
+
+msgid "Preview"
+msgstr "Pratinjau"
+
+msgid "Random"
+msgstr "Acak"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Jalur relatif dimulai dengan ../../../data"
+
+msgid "Repeat"
+msgstr "Ulangi"
+
+msgid "Repeat type"
+msgstr "Jenis pengulangan"
+
+msgid "Reset"
+msgstr "Atur ulang"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Kembalikan font tombol tutup tab ke default"
+
+msgid "Reverse"
+msgstr "Terbalik"
+
+msgid "Right"
+msgstr "Kanan"
+
+msgid "Sequence"
+msgstr "Urutan"
+
+msgid "Sidebar transparent"
+msgstr "Bilah samping transparan"
+
+msgid "Simple"
+msgstr "Sederhana"
+
+msgid "Slideshow interval"
+msgstr "Interval tayangan slide"
+
+msgid "Slideshow interval (second)"
+msgstr "Interval tayangan slide (detik)"
+
+msgid "Style"
+msgstr "Gaya"
+
+msgid "TabBar preserve space width"
+msgstr "Lebar cadangan bilah tab"
+
+msgid "Top"
+msgstr "Atas"
+
+msgid "UI Font"
+msgstr "Font"
+
+msgid "UI Font Family"
+msgstr "Font antarmuka"
+
+msgid "Unit: %, 0 = default"
+msgstr "Satuan: %, 0 = default"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Satuan: %, 0 = nonaktif"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Satuan: %, 0 = nonaktif, terapkan ke menu beranda dan daftar grup lainnya"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Satuan: %, 0 = nonaktif, terapkan ke bilah samping profil"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Satuan: %, 100 = nonaktif"
+
+msgid "Unit: %, 50 = default"
+msgstr "Satuan: %, 50 = default"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Satuan: %, 50 = nonaktif, terapkan ke footer halaman beranda"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Satuan: derajat, 0 = nonaktif"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Satuan: px, 0 = nonaktif"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Satuan: px, 138 = nonaktif"

@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Inaktives geteiltes Panel abdunkeln"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Advanced"
+msgstr "Erweitert"
+
+msgid "Background"
+msgstr "Hintergrund"
+
+msgid "Background Filters"
+msgstr "Hintergrundfilter"
+
+msgid "Background blur"
+msgstr "Hintergrundunschärfe"
+
+msgid "Background brightness"
+msgstr "Hintergrundhelligkeit"
+
+msgid "Background choose type"
+msgstr "Hintergrundauswahl-Typ"
+
+msgid "Background contrast"
+msgstr "Hintergrundkontrast"
+
+msgid "Background grayscale"
+msgstr "Hintergrund-Graustufen"
+
+msgid "Background hue rotate"
+msgstr "Hintergrund-Farbton drehen"
+
+msgid "Background image master switch"
+msgstr "Hintergrundbild-Hauptschalter"
+
+msgid "Background invert"
+msgstr "Hintergrund invertieren"
+
+msgid "Background mode"
+msgstr "Hintergrundmodus"
+
+msgid "Background opacity"
+msgstr "Hintergrunddeckkraft"
+
+msgid "Background path"
+msgstr "Hintergrundbildpfad"
+
+msgid "Background saturate"
+msgstr "Hintergrundsättigung"
+
+msgid "Background sepia"
+msgstr "Hintergrund-Sepia"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Center"
+msgstr "Mitte"
+
+msgid "Contain"
+msgstr "Einpassen"
+
+msgid "Cover"
+msgstr "Füllen"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Beeinflusst nicht die Terminal-Schriftart in der [Darstellung]-Konfiguration"
+
+msgid "Enable"
+msgstr "Aktivieren"
+
+msgid "Enable UI font replace"
+msgstr "UI-Schriftartersetzung aktivieren"
+
+msgid "Enable background"
+msgstr "Hintergrundbild aktivieren"
+
+msgid "Extra Settings"
+msgstr "Erweiterte Einstellungen"
+
+msgid "Fix close button font"
+msgstr "Schriftart der Schließen-Schaltfläche korrigieren"
+
+msgid "Folder Mode"
+msgstr "Ordner-Modus"
+
+msgid "Fullscreen position"
+msgstr "Vollbildposition"
+
+msgid "Fullscreen type"
+msgstr "Vollbildtyp"
+
+msgid "Group list transparent"
+msgstr "Gruppenliste transparent"
+
+msgid "Hide main menu footer"
+msgstr "Hauptmenü-Fußzeile ausblenden"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Hauptmenü-Fußzeile ausblenden (untere Leiste)"
+
+msgid "Home page footer transparent"
+msgstr "Startseiten-Fußzeile transparent"
+
+msgid "How to choose background"
+msgstr "Hintergrundauswahl"
+
+msgid "Inactive split panel dimming"
+msgstr "Aktives geteiltes Panel abdunkeln"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "No Repeat"
+msgstr "Nicht wiederholen"
+
+msgid "Others"
+msgstr "Sonstiges"
+
+msgid "Pick File"
+msgstr "Datei wählen"
+
+msgid "Pick Folder"
+msgstr "Ordner wählen"
+
+msgid "Preview"
+msgstr "Vorschau"
+
+msgid "Random"
+msgstr "Zufällig"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relativer Pfad beginnt mit ../../../data"
+
+msgid "Repeat"
+msgstr "Wiederholen"
+
+msgid "Repeat type"
+msgstr "Wiederholungstyp"
+
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Schließen-Schaltfläche der Tabs auf Standardschriftart zurücksetzen"
+
+msgid "Reverse"
+msgstr "Umgekehrt"
+
+msgid "Right"
+msgstr "Rechts"
+
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgid "Sidebar transparent"
+msgstr "Seitenleiste transparent"
+
+msgid "Simple"
+msgstr "Einfach"
+
+msgid "Slideshow interval"
+msgstr "Diashow-Intervall"
+
+msgid "Slideshow interval (second)"
+msgstr "Diashow-Intervall (Sekunden)"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "TabBar preserve space width"
+msgstr "Reservierte Breite der Tab-Leiste"
+
+msgid "Top"
+msgstr "Oben"
+
+msgid "UI Font"
+msgstr "Schriftart"
+
+msgid "UI Font Family"
+msgstr "UI-Schriftart"
+
+msgid "Unit: %, 0 = default"
+msgstr "Einheit: %, 0 = Standard"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Einheit: %, 0 = deaktiviert"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Einheit: %, 0 = deaktiviert, auf Startmenü und andere Gruppenlisten anwenden"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Einheit: %, 0 = deaktiviert, auf die Profil-Seitenleiste anwenden"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Einheit: %, 100 = deaktiviert"
+
+msgid "Unit: %, 50 = default"
+msgstr "Einheit: %, 50 = Standard"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Einheit: %, 50 = deaktiviert, auf die Startseiten-Fußzeile anwenden"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Einheit: Grad, 0 = deaktiviert"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Einheit: px, 0 = deaktiviert"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Einheit: px, 138 = deaktiviert"

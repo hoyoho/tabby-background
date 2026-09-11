@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Active split panel dimming"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Advanced"
+msgstr "Advanced"
+
+msgid "Background"
+msgstr "Background"
+
+msgid "Background Filters"
+msgstr "Background Filters"
+
+msgid "Background blur"
+msgstr "Background blur"
+
+msgid "Background brightness"
+msgstr "Background brightness"
+
+msgid "Background choose type"
+msgstr "Background choose type"
+
+msgid "Background contrast"
+msgstr "Background contrast"
+
+msgid "Background grayscale"
+msgstr "Background grayscale"
+
+msgid "Background hue rotate"
+msgstr "Background hue rotate"
+
+msgid "Background image master switch"
+msgstr "Background image master switch"
+
+msgid "Background invert"
+msgstr "Background invert"
+
+msgid "Background mode"
+msgstr "Background mode"
+
+msgid "Background opacity"
+msgstr "Background opacity"
+
+msgid "Background path"
+msgstr "Background path"
+
+msgid "Background saturate"
+msgstr "Background saturate"
+
+msgid "Background sepia"
+msgstr "Background sepia"
+
+msgid "Bottom"
+msgstr "Bottom"
+
+msgid "Center"
+msgstr "Center"
+
+msgid "Contain"
+msgstr "Contain"
+
+msgid "Cover"
+msgstr "Cover"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Do not affect the terminal font in the [appearance] configuration"
+
+msgid "Enable"
+msgstr "Enable"
+
+msgid "Enable UI font replace"
+msgstr "Enable UI font replace"
+
+msgid "Enable background"
+msgstr "Enable background"
+
+msgid "Extra Settings"
+msgstr "Extra Settings"
+
+msgid "Fix close button font"
+msgstr "Fix close button font"
+
+msgid "Folder Mode"
+msgstr "Folder Mode"
+
+msgid "Fullscreen position"
+msgstr "Fullscreen position"
+
+msgid "Fullscreen type"
+msgstr "Fullscreen type"
+
+msgid "Group list transparent"
+msgstr "Group list transparent"
+
+msgid "Hide main menu footer"
+msgstr "Hide main menu footer"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Hide the main menu footer(bottom bar)"
+
+msgid "Home page footer transparent"
+msgstr "Home page footer transparent"
+
+msgid "How to choose background"
+msgstr "How to choose background"
+
+msgid "Inactive split panel dimming"
+msgstr "Inactive split panel dimming"
+
+msgid "Left"
+msgstr "Left"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "No Repeat"
+msgstr "No Repeat"
+
+msgid "Others"
+msgstr "Others"
+
+msgid "Pick File"
+msgstr "Pick File"
+
+msgid "Pick Folder"
+msgstr "Pick Folder"
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "Random"
+msgstr "Random"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relative path begins with ../../../data"
+
+msgid "Repeat"
+msgstr "Repeat"
+
+msgid "Repeat type"
+msgstr "Repeat type"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Restore the tab closing button to default font"
+
+msgid "Reverse"
+msgstr "Reverse"
+
+msgid "Right"
+msgstr "Right"
+
+msgid "Sequence"
+msgstr "Sequence"
+
+msgid "Sidebar transparent"
+msgstr "Sidebar transparent"
+
+msgid "Simple"
+msgstr "Simple"
+
+msgid "Slideshow interval"
+msgstr "Slideshow interval"
+
+msgid "Slideshow interval (second)"
+msgstr "Slideshow interval (second)"
+
+msgid "Style"
+msgstr "Style"
+
+msgid "TabBar preserve space width"
+msgstr "TabBar preserve space width"
+
+msgid "Top"
+msgstr "Top"
+
+msgid "UI Font"
+msgstr "UI Font"
+
+msgid "UI Font Family"
+msgstr "UI Font Family"
+
+msgid "Unit: %, 0 = default"
+msgstr "Unit: %, 0 = default"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Unit: %, 0 = disable"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Unit: %, 0 = disable, Apply to home menu and other group list"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Unit: %, 0 = disable, Apply to the profile sidebar"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Unit: %, 100 = disable"
+
+msgid "Unit: %, 50 = default"
+msgstr "Unit: %, 50 = default"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Unit: %, 50 = disable, Apply to home page footer"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Unit: degree, 0 = disable"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Unit: px, 0 = disable"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Unit: px, 138 = disable"

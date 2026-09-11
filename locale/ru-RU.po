@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Затемнять неактивную разделённую панель"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Background Filters"
+msgstr "Фильтры фона"
+
+msgid "Background blur"
+msgstr "Размытие фона"
+
+msgid "Background brightness"
+msgstr "Яркость фона"
+
+msgid "Background choose type"
+msgstr "Тип выбора фона"
+
+msgid "Background contrast"
+msgstr "Контрастность фона"
+
+msgid "Background grayscale"
+msgstr "Оттенки серого фона"
+
+msgid "Background hue rotate"
+msgstr "Поворот оттенка фона"
+
+msgid "Background image master switch"
+msgstr "Главный переключатель фонового изображения"
+
+msgid "Background invert"
+msgstr "Инвертировать фон"
+
+msgid "Background mode"
+msgstr "Режим фона"
+
+msgid "Background opacity"
+msgstr "Непрозрачность фона"
+
+msgid "Background path"
+msgstr "Путь к фоновому изображению"
+
+msgid "Background saturate"
+msgstr "Насыщенность фона"
+
+msgid "Background sepia"
+msgstr "Сепия фона"
+
+msgid "Bottom"
+msgstr "Снизу"
+
+msgid "Center"
+msgstr "По центру"
+
+msgid "Contain"
+msgstr "Вместить"
+
+msgid "Cover"
+msgstr "Заполнить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Не влияет на шрифт терминала в конфигурации [внешний вид]"
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Enable UI font replace"
+msgstr "Включить замену шрифта интерфейса"
+
+msgid "Enable background"
+msgstr "Включить фоновое изображение"
+
+msgid "Extra Settings"
+msgstr "Дополнительные настройки"
+
+msgid "Fix close button font"
+msgstr "Исправить шрифт кнопки закрытия"
+
+msgid "Folder Mode"
+msgstr "Режим папки"
+
+msgid "Fullscreen position"
+msgstr "Положение на весь экран"
+
+msgid "Fullscreen type"
+msgstr "Тип на весь экран"
+
+msgid "Group list transparent"
+msgstr "Прозрачный список групп"
+
+msgid "Hide main menu footer"
+msgstr "Скрыть нижний колонтитул главного меню"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Скрыть нижний колонтитул главного меню (нижняя панель)"
+
+msgid "Home page footer transparent"
+msgstr "Прозрачный нижний колонтитул главной страницы"
+
+msgid "How to choose background"
+msgstr "Как выбирать фон"
+
+msgid "Inactive split panel dimming"
+msgstr "Затемнять активную разделённую панель"
+
+msgid "Left"
+msgstr "Слева"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "No Repeat"
+msgstr "Не повторять"
+
+msgid "Others"
+msgstr "Прочее"
+
+msgid "Pick File"
+msgstr "Выбрать файл"
+
+msgid "Pick Folder"
+msgstr "Выбрать папку"
+
+msgid "Preview"
+msgstr "Предпросмотр"
+
+msgid "Random"
+msgstr "Случайно"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Относительный путь начинается с ../../../data"
+
+msgid "Repeat"
+msgstr "Повторять"
+
+msgid "Repeat type"
+msgstr "Тип повтора"
+
+msgid "Reset"
+msgstr "Сбросить"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Вернуть шрифт кнопки закрытия вкладок по умолчанию"
+
+msgid "Reverse"
+msgstr "Обратный"
+
+msgid "Right"
+msgstr "Справа"
+
+msgid "Sequence"
+msgstr "По порядку"
+
+msgid "Sidebar transparent"
+msgstr "Прозрачная боковая панель"
+
+msgid "Simple"
+msgstr "Простой"
+
+msgid "Slideshow interval"
+msgstr "Интервал слайд-шоу"
+
+msgid "Slideshow interval (second)"
+msgstr "Интервал слайд-шоу (секунды)"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "TabBar preserve space width"
+msgstr "Зарезервированная ширина панели вкладок"
+
+msgid "Top"
+msgstr "Сверху"
+
+msgid "UI Font"
+msgstr "Шрифт"
+
+msgid "UI Font Family"
+msgstr "Шрифт интерфейса"
+
+msgid "Unit: %, 0 = default"
+msgstr "Единица: %, 0 = по умолчанию"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Единица: %, 0 = отключено"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Единица: %, 0 = отключено, применить к главному меню и другим спискам групп"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Единица: %, 0 = отключено, применить к боковой панели профилей"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Единица: %, 100 = отключено"
+
+msgid "Unit: %, 50 = default"
+msgstr "Единица: %, 50 = по умолчанию"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Единица: %, 50 = отключено, применить к нижнему колонтитулу главной страницы"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Единица: градусы, 0 = отключено"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Единица: px, 0 = отключено"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Единица: px, 138 = отключено"

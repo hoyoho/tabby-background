@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "非活動分割頁面變暗"
+
+msgid "Add"
+msgstr "新增"
+
+msgid "Advanced"
+msgstr "進階"
+
+msgid "Background"
+msgstr "背景"
+
+msgid "Background Filters"
+msgstr "背景特效"
+
+msgid "Background blur"
+msgstr "背景模糊度"
+
+msgid "Background brightness"
+msgstr "背景亮度"
+
+msgid "Background choose type"
+msgstr "背景選擇方式"
+
+msgid "Background contrast"
+msgstr "背景對比度"
+
+msgid "Background grayscale"
+msgstr "背景灰階"
+
+msgid "Background hue rotate"
+msgstr "背景色相旋轉"
+
+msgid "Background image master switch"
+msgstr "背景圖片總開關"
+
+msgid "Background invert"
+msgstr "背景反轉"
+
+msgid "Background mode"
+msgstr "背景模式"
+
+msgid "Background opacity"
+msgstr "背景不透明度"
+
+msgid "Background path"
+msgstr "背景圖片路徑"
+
+msgid "Background saturate"
+msgstr "背景飽和度"
+
+msgid "Background sepia"
+msgstr "背景褐色"
+
+msgid "Bottom"
+msgstr "底部"
+
+msgid "Center"
+msgstr "置中"
+
+msgid "Contain"
+msgstr "適應"
+
+msgid "Cover"
+msgstr "填充"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "不影響【外觀】設定中的終端字型"
+
+msgid "Enable"
+msgstr "啟用"
+
+msgid "Enable UI font replace"
+msgstr "是否啟用介面字型替換"
+
+msgid "Enable background"
+msgstr "是否啟用背景圖片"
+
+msgid "Extra Settings"
+msgstr "額外設定"
+
+msgid "Fix close button font"
+msgstr "修復標籤頁關閉按鈕字型"
+
+msgid "Folder Mode"
+msgstr "目錄模式"
+
+msgid "Fullscreen position"
+msgstr "全螢幕位置"
+
+msgid "Fullscreen type"
+msgstr "全螢幕類型"
+
+msgid "Group list transparent"
+msgstr "分組列表透明度"
+
+msgid "Hide main menu footer"
+msgstr "隱藏主介面頁尾"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "隱藏主介面頁尾（最下面的長條）"
+
+msgid "Home page footer transparent"
+msgstr "首頁頁尾透明度"
+
+msgid "How to choose background"
+msgstr "如何抽取背景"
+
+msgid "Inactive split panel dimming"
+msgstr "活動分割頁面變暗"
+
+msgid "Left"
+msgstr "左側"
+
+msgid "Name"
+msgstr "名稱"
+
+msgid "No Repeat"
+msgstr "不重複"
+
+msgid "Others"
+msgstr "其他"
+
+msgid "Pick File"
+msgstr "選擇檔案"
+
+msgid "Pick Folder"
+msgstr "選擇目錄"
+
+msgid "Preview"
+msgstr "預覽"
+
+msgid "Random"
+msgstr "隨機"
+
+msgid "Relative path begins with ../../../data"
+msgstr "相對路徑從../../../data開始"
+
+msgid "Repeat"
+msgstr "重複"
+
+msgid "Repeat type"
+msgstr "重複類型"
+
+msgid "Reset"
+msgstr "重設"
+
+msgid "Restore the tab closing button to default font"
+msgstr "將標籤頁關閉按鈕還原為預設字型"
+
+msgid "Reverse"
+msgstr "倒序"
+
+msgid "Right"
+msgstr "右側"
+
+msgid "Sequence"
+msgstr "順序"
+
+msgid "Sidebar transparent"
+msgstr "側邊欄透明度"
+
+msgid "Simple"
+msgstr "簡單"
+
+msgid "Slideshow interval"
+msgstr "幻燈片間隔"
+
+msgid "Slideshow interval (second)"
+msgstr "幻燈片間隔（秒）"
+
+msgid "Style"
+msgstr "樣式"
+
+msgid "TabBar preserve space width"
+msgstr "標籤列預留寬度"
+
+msgid "Top"
+msgstr "頂部"
+
+msgid "UI Font"
+msgstr "字型"
+
+msgid "UI Font Family"
+msgstr "介面字型"
+
+msgid "Unit: %, 0 = default"
+msgstr "單位：%，0 = 預設"
+
+msgid "Unit: %, 0 = disable"
+msgstr "單位：%，0 = 停用"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "單位：%，0 = 停用，套用到首頁選單和其他分組列表"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "單位：%，0 = 停用，套用到設定側邊欄"
+
+msgid "Unit: %, 100 = disable"
+msgstr "單位：%，100 = 停用"
+
+msgid "Unit: %, 50 = default"
+msgstr "單位：%，50 = 預設"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "單位：%，50 = 停用，套用到首頁頁尾"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "單位：度，0 = 停用"
+
+msgid "Unit: px, 0 = disable"
+msgstr "單位：像素，0 = 停用"
+
+msgid "Unit: px, 138 = disable"
+msgstr "單位：像素，138 = 停用"

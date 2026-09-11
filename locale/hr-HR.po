@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "Zatamni neaktivni podijeljeni panel"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "Advanced"
+msgstr "Napredno"
+
+msgid "Background"
+msgstr "Pozadina"
+
+msgid "Background Filters"
+msgstr "Filtri pozadine"
+
+msgid "Background blur"
+msgstr "Zamućenje pozadine"
+
+msgid "Background brightness"
+msgstr "Svjetlina pozadine"
+
+msgid "Background choose type"
+msgstr "Vrsta odabira pozadine"
+
+msgid "Background contrast"
+msgstr "Kontrast pozadine"
+
+msgid "Background grayscale"
+msgstr "Nijanse sive pozadine"
+
+msgid "Background hue rotate"
+msgstr "Rotacija nijanse pozadine"
+
+msgid "Background image master switch"
+msgstr "Glavni prekidač slike pozadine"
+
+msgid "Background invert"
+msgstr "Invertiraj pozadinu"
+
+msgid "Background mode"
+msgstr "Način pozadine"
+
+msgid "Background opacity"
+msgstr "Neprozirnost pozadine"
+
+msgid "Background path"
+msgstr "Putanja slike pozadine"
+
+msgid "Background saturate"
+msgstr "Zasićenje pozadine"
+
+msgid "Background sepia"
+msgstr "Sepija pozadine"
+
+msgid "Bottom"
+msgstr "Dolje"
+
+msgid "Center"
+msgstr "Sredina"
+
+msgid "Contain"
+msgstr "Prilagodi"
+
+msgid "Cover"
+msgstr "Prekrij"
+
+msgid "Delete"
+msgstr "Izbriši"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "Ne utječe na font terminala u konfiguraciji [izgled]"
+
+msgid "Enable"
+msgstr "Omogući"
+
+msgid "Enable UI font replace"
+msgstr "Omogući zamjenu fonta sučelja"
+
+msgid "Enable background"
+msgstr "Omogući sliku pozadine"
+
+msgid "Extra Settings"
+msgstr "Dodatne postavke"
+
+msgid "Fix close button font"
+msgstr "Ispravi font gumba za zatvaranje"
+
+msgid "Folder Mode"
+msgstr "Način mape"
+
+msgid "Fullscreen position"
+msgstr "Položaj preko cijelog zaslona"
+
+msgid "Fullscreen type"
+msgstr "Vrsta preko cijelog zaslona"
+
+msgid "Group list transparent"
+msgstr "Prozirni popis grupa"
+
+msgid "Hide main menu footer"
+msgstr "Sakrij podnožje glavnog izbornika"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "Sakrij podnožje glavnog izbornika (donja traka)"
+
+msgid "Home page footer transparent"
+msgstr "Prozirno podnožje početne stranice"
+
+msgid "How to choose background"
+msgstr "Kako odabrati pozadinu"
+
+msgid "Inactive split panel dimming"
+msgstr "Zatamni aktivni podijeljeni panel"
+
+msgid "Left"
+msgstr "Lijevo"
+
+msgid "Name"
+msgstr "Naziv"
+
+msgid "No Repeat"
+msgstr "Ne ponavljaj"
+
+msgid "Others"
+msgstr "Ostalo"
+
+msgid "Pick File"
+msgstr "Odaberi datoteku"
+
+msgid "Pick Folder"
+msgstr "Odaberi mapu"
+
+msgid "Preview"
+msgstr "Pregled"
+
+msgid "Random"
+msgstr "Nasumično"
+
+msgid "Relative path begins with ../../../data"
+msgstr "Relativna putanja počinje s ../../../data"
+
+msgid "Repeat"
+msgstr "Ponovi"
+
+msgid "Repeat type"
+msgstr "Vrsta ponavljanja"
+
+msgid "Reset"
+msgstr "Resetiraj"
+
+msgid "Restore the tab closing button to default font"
+msgstr "Vrati zadani font gumba za zatvaranje kartica"
+
+msgid "Reverse"
+msgstr "Obrnuto"
+
+msgid "Right"
+msgstr "Desno"
+
+msgid "Sequence"
+msgstr "Redoslijed"
+
+msgid "Sidebar transparent"
+msgstr "Prozirna bočna traka"
+
+msgid "Simple"
+msgstr "Jednostavno"
+
+msgid "Slideshow interval"
+msgstr "Interval slideshowa"
+
+msgid "Slideshow interval (second)"
+msgstr "Interval slideshowa (sekunde)"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "TabBar preserve space width"
+msgstr "Rezervirana širina trake kartica"
+
+msgid "Top"
+msgstr "Gore"
+
+msgid "UI Font"
+msgstr "Font"
+
+msgid "UI Font Family"
+msgstr "Font sučelja"
+
+msgid "Unit: %, 0 = default"
+msgstr "Jedinica: %, 0 = zadano"
+
+msgid "Unit: %, 0 = disable"
+msgstr "Jedinica: %, 0 = onemogućeno"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "Jedinica: %, 0 = onemogućeno, primijeni na početni izbornik i druge popise grupa"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "Jedinica: %, 0 = onemogućeno, primijeni na bočnu traku profila"
+
+msgid "Unit: %, 100 = disable"
+msgstr "Jedinica: %, 100 = onemogućeno"
+
+msgid "Unit: %, 50 = default"
+msgstr "Jedinica: %, 50 = zadano"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "Jedinica: %, 50 = onemogućeno, primijeni na podnožje početne stranice"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "Jedinica: stupnjevi, 0 = onemogućeno"
+
+msgid "Unit: px, 0 = disable"
+msgstr "Jedinica: px, 0 = onemogućeno"
+
+msgid "Unit: px, 138 = disable"
+msgstr "Jedinica: px, 138 = onemogućeno"

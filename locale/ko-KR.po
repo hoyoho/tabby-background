@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Active split panel dimming"
+msgstr "비활성 분할 패널 어둡게"
+
+msgid "Add"
+msgstr "추가"
+
+msgid "Advanced"
+msgstr "고급"
+
+msgid "Background"
+msgstr "배경"
+
+msgid "Background Filters"
+msgstr "배경 필터"
+
+msgid "Background blur"
+msgstr "배경 흐림"
+
+msgid "Background brightness"
+msgstr "배경 밝기"
+
+msgid "Background choose type"
+msgstr "배경 선택 방식"
+
+msgid "Background contrast"
+msgstr "배경 대비"
+
+msgid "Background grayscale"
+msgstr "배경 회색조"
+
+msgid "Background hue rotate"
+msgstr "배경 색조 회전"
+
+msgid "Background image master switch"
+msgstr "배경 이미지 마스터 스위치"
+
+msgid "Background invert"
+msgstr "배경 반전"
+
+msgid "Background mode"
+msgstr "배경 모드"
+
+msgid "Background opacity"
+msgstr "배경 불투명도"
+
+msgid "Background path"
+msgstr "배경 이미지 경로"
+
+msgid "Background saturate"
+msgstr "배경 채도"
+
+msgid "Background sepia"
+msgstr "배경 세피아"
+
+msgid "Bottom"
+msgstr "아래"
+
+msgid "Center"
+msgstr "가운데"
+
+msgid "Contain"
+msgstr "맞춤"
+
+msgid "Cover"
+msgstr "채우기"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Do not affect the terminal font in the [appearance] configuration"
+msgstr "[외형] 설정의 터미널 글꼴에 영향을 주지 않음"
+
+msgid "Enable"
+msgstr "활성화"
+
+msgid "Enable UI font replace"
+msgstr "UI 글꼴 교체 활성화"
+
+msgid "Enable background"
+msgstr "배경 이미지 활성화"
+
+msgid "Extra Settings"
+msgstr "추가 설정"
+
+msgid "Fix close button font"
+msgstr "닫기 버튼 글꼴 수정"
+
+msgid "Folder Mode"
+msgstr "폴더 모드"
+
+msgid "Fullscreen position"
+msgstr "전체 화면 위치"
+
+msgid "Fullscreen type"
+msgstr "전체 화면 유형"
+
+msgid "Group list transparent"
+msgstr "그룹 목록 투명도"
+
+msgid "Hide main menu footer"
+msgstr "메인 메뉴 바닥글 숨기기"
+
+msgid "Hide the main menu footer(bottom bar)"
+msgstr "메인 메뉴 바닥글 숨기기(하단 바)"
+
+msgid "Home page footer transparent"
+msgstr "홈 페이지 바닥글 투명도"
+
+msgid "How to choose background"
+msgstr "배경 선택 방식"
+
+msgid "Inactive split panel dimming"
+msgstr "활성 분할 패널 어둡게"
+
+msgid "Left"
+msgstr "왼쪽"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "No Repeat"
+msgstr "반복 안 함"
+
+msgid "Others"
+msgstr "기타"
+
+msgid "Pick File"
+msgstr "파일 선택"
+
+msgid "Pick Folder"
+msgstr "폴더 선택"
+
+msgid "Preview"
+msgstr "미리보기"
+
+msgid "Random"
+msgstr "무작위"
+
+msgid "Relative path begins with ../../../data"
+msgstr "상대 경로는 ../../../data로 시작"
+
+msgid "Repeat"
+msgstr "반복"
+
+msgid "Repeat type"
+msgstr "반복 유형"
+
+msgid "Reset"
+msgstr "초기화"
+
+msgid "Restore the tab closing button to default font"
+msgstr "탭 닫기 버튼을 기본 글꼴로 복원"
+
+msgid "Reverse"
+msgstr "역순"
+
+msgid "Right"
+msgstr "오른쪽"
+
+msgid "Sequence"
+msgstr "순서"
+
+msgid "Sidebar transparent"
+msgstr "사이드바 투명도"
+
+msgid "Simple"
+msgstr "단순"
+
+msgid "Slideshow interval"
+msgstr "슬라이드쇼 간격"
+
+msgid "Slideshow interval (second)"
+msgstr "슬라이드쇼 간격(초)"
+
+msgid "Style"
+msgstr "스타일"
+
+msgid "TabBar preserve space width"
+msgstr "탭바 예약 너비"
+
+msgid "Top"
+msgstr "위"
+
+msgid "UI Font"
+msgstr "글꼴"
+
+msgid "UI Font Family"
+msgstr "UI 글꼴"
+
+msgid "Unit: %, 0 = default"
+msgstr "단위: %, 0 = 기본"
+
+msgid "Unit: %, 0 = disable"
+msgstr "단위: %, 0 = 비활성화"
+
+msgid "Unit: %, 0 = disable, Apply to home menu and other group list"
+msgstr "단위: %, 0 = 비활성화, 홈 메뉴 및 기타 그룹 목록에 적용"
+
+msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
+msgstr "단위: %, 0 = 비활성화, 프로필 사이드바에 적용"
+
+msgid "Unit: %, 100 = disable"
+msgstr "단위: %, 100 = 비활성화"
+
+msgid "Unit: %, 50 = default"
+msgstr "단위: %, 50 = 기본"
+
+msgid "Unit: %, 50 = disable, Apply to home page footer"
+msgstr "단위: %, 50 = 비활성화, 홈 페이지 바닥글에 적용"
+
+msgid "Unit: degree, 0 = disable"
+msgstr "단위: 도, 0 = 비활성화"
+
+msgid "Unit: px, 0 = disable"
+msgstr "단위: px, 0 = 비활성화"
+
+msgid "Unit: px, 138 = disable"
+msgstr "단위: px, 138 = 비활성화"
