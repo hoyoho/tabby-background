@@ -3,7 +3,7 @@ import { CdkDragDrop, moveItemInArray } from "@angular/cdk/drag-drop";
 import { BackgroundService } from "./background.service";
 import { AdvancedBackground, BackgroundPluginConfig } from "./config.provider";
 import { ToastrService } from "ngx-toastr";
-import { ConfigService, PlatformService, TranslateService } from "tabby-core";
+import { ConfigService, HostAppService, Platform, PlatformService, TranslateService } from "tabby-core";
 import { ElectronHostWindow, ElectronService } from "tabby-electron";
 import { debounce } from "utils-decorators";
 
@@ -150,15 +150,6 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
       step: "1",
     },
     {
-      title: "Terminal toolbar transparent",
-      description: "Unit: %, 0 = disable, Apply to terminal toolbar",
-      model: "backgroundTerminalToolbarTransparent",
-      default: "0",
-      min: "0",
-      max: "100",
-      step: "1",
-    },
-    {
       title: "Home page footer transparent",
       description: "Unit: %, 50 = disable, Apply to home page footer",
       model: "backgroundFooterTransparent",
@@ -167,27 +158,18 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
       max: "100",
       step: "1",
     },
+    {
+      title: "Sidebar transparent",
+      description: "Unit: %, 0 = disable, Apply to the profile sidebar",
+      model: "backgroundSidebarTransparent",
+      default: "0",
+      min: "0",
+      max: "100",
+      step: "1",
+    },
   ];
 
   others: any[] = [
-    // {
-    //   title: "Tabs dynamic width min",
-    //   description: "Unit: px, 0 = disable",
-    //   model: "tabsFlexMinWidth",
-    //   default: "200",
-    //   min: "0",
-    //   max: "1000",
-    //   step: "1",
-    // },
-    // {
-    //   title: "Tabs fixed width",
-    //   description: "Unit: px, 200 = disable",
-    //   model: "tabsFixedWidth",
-    //   default: "200",
-    //   min: "50",
-    //   max: "1000",
-    //   step: "1",
-    // },
     {
       title: "Inactive split panel dimming",
       description: "Unit: %, 50 = default",
@@ -214,11 +196,13 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
       min: "0",
       max: "1000",
       step: "1",
+      windowsOnly: true,
     },
   ];
 
   pluginConfig: BackgroundPluginConfig;
   fonts: string[];
+  isTabBarSpaceSupported = false;
 
   constructor(
     public config: ConfigService,
@@ -227,9 +211,11 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
     private hostWindow: ElectronHostWindow,
     private toastr: ToastrService,
     private translate: TranslateService,
-    private platform: PlatformService
+    private platform: PlatformService,
+    private hostApp: HostAppService
   ) {
     this.pluginConfig = this.config.store.backgroundPlugin;
+    this.isTabBarSpaceSupported = this.hostApp.platform !== Platform.macOS;
   }
   async ngOnInit() {
     this.fonts = await this.platform.listFonts();
@@ -281,7 +267,4 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
   previewBackground(i: number) {
     this.background.enterPreviewMode(i);
   }
-
-  exportBackgroundAdvancedSettings() {}
-  importBackgroundAdvancedSettings() {}
 }

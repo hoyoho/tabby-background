@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import TabbyCoreModule, { ConfigProvider, ConfigService } from "tabby-core";
+import TabbyCoreModule, { ConfigProvider, ConfigService, GlobalStyleProvider } from "tabby-core";
 import { SettingsTabProvider } from "tabby-settings";
 
 import { BackgroundService } from "./background.service";
@@ -15,6 +15,7 @@ import { BackgroundSettingsTabProvider } from "./settings-tab.provider";
   providers: [
     { provide: ConfigProvider, useClass: BackgroundConfigProvider, multi: true },
     { provide: SettingsTabProvider, useClass: BackgroundSettingsTabProvider, multi: true },
+    { provide: GlobalStyleProvider, useExisting: BackgroundService, multi: true },
   ],
   entryComponents: [BackgroundSettingsTabComponent],
   declarations: [BackgroundSettingsTabComponent],

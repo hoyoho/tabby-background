@@ -1,52 +1,33 @@
-import { Injectable } from "@angular/core";
-import { ConfigService, LogService, Logger, TranslateService } from "tabby-core";
+import { Injectable, Injector } from "@angular/core";
+import { ConfigService, LogService, Logger, ThemesService, GlobalStyleProvider, TranslateService } from "tabby-core";
 import { AdvancedBackground, Background, BackgroundPluginConfig, DefaultBackground } from "./config.provider";
 import { translations } from "./translations";
 import * as uuid from "uuid";
 import { readdirSync } from "fs";
 import path from "path";
 
-type SlideShowItem = {
-  id: string;
-  path: string;
-  background: AdvancedBackground;
-};
-
 @Injectable({ providedIn: "root" })
-export class BackgroundService {
+export class BackgroundService implements GlobalStyleProvider {
   private logger: Logger;
-  private styleElement: HTMLStyleElement;
-  private backgroundStyleElement: HTMLStyleElement;
-  private uiFontStyleElement: HTMLStyleElement;
-  private uiOtherStyleElement: HTMLStyleElement;
   pluginConfig: BackgroundPluginConfig;
   private backgroundTimer: NodeJS.Timeout;
-  private transitionTimer: NodeJS.Timeout;
+  private fadeTimer: NodeJS.Timeout;
   private previewMode: boolean;
   private previewIndex: number;
   private slideShowList: string[];
   private slideShowCurrentIndex: number;
+  private fadeIn = true;
+  private readonly fadeDurationMs = 500;
+  private themes: ThemesService | null = null;
 
   constructor(
     public config: ConfigService,
+    private injector: Injector,
     private logService: LogService,
     private translate: TranslateService,
   ) {
     this.logger = this.logService.create("tabby-background");
     this.logger.info("BackgroundService ctor");
-
-    this.backgroundStyleElement = document.createElement("style");
-    this.backgroundStyleElement.id = "background";
-    this.backgroundStyleElement.innerHTML = "";
-    document.body.appendChild(this.backgroundStyleElement);
-    this.uiFontStyleElement = document.createElement("style");
-    this.uiFontStyleElement.id = "uiFont";
-    this.uiFontStyleElement.innerHTML = "";
-    document.body.appendChild(this.uiFontStyleElement);
-    this.uiOtherStyleElement = document.createElement("style");
-    this.uiOtherStyleElement.id = "uiOther";
-    this.uiOtherStyleElement.innerHTML = "";
-    document.body.appendChild(this.uiOtherStyleElement);
 
     this.previewMode = false;
     this.slideShowList = [];
@@ -65,34 +46,48 @@ export class BackgroundService {
     });
   }
 
-  clearStyle() {
-    this.backgroundStyleElement.innerHTML = "";
-    this.uiFontStyleElement.innerHTML = "";
-    this.uiOtherStyleElement.innerHTML = "";
-    this.leaveSlideShow();
+  // Lazily resolved: BackgroundService itself is a GlobalStyleProvider whose
+  // construction ThemesService triggers, so injecting ThemesService eagerly
+  // would create a DI cycle (NG0200).
+  private getThemes(): ThemesService {
+    return (this.themes ??= this.injector.get(ThemesService));
+  }
+
+  getStyleModuleName(): string {
+    return "tabby-background";
+  }
+
+  provideStyles(): string {
+    if (!this.pluginConfig) {
+        return "";
+    }
+    if (!this.pluginConfig.backgroundEnabled) {
+      return this.buildUiFontCss() + "\n" + this.buildOthersCss();
+    }
+    const parts: string[] = [];
+    if (this.previewMode && this.pluginConfig.backgrounds[this.previewIndex]) {
+      parts.push(this.buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex]));
+    } else if (this.pluginConfig.backgroundMode === "simple") {
+      parts.push(this.buildBackgroundCss(this.pluginConfig));
+    } else if (this.pluginConfig.backgroundAdvancedCurrentId) {
+      const background = this.getBackgroundByID(this.pluginConfig.backgroundAdvancedCurrentId);
+      if (background) {
+        parts.push(this.buildBackgroundCss(background));
+      }
+    }
+    parts.push(this.buildUiFontCss());
+    parts.push(this.buildOthersCss());
+    return parts.filter(Boolean).join("\n");
   }
 
   applyStyle() {
-    this.clearStyle();
-
-    // this.styleElement.innerHTML = this.buildCss();
-    this.uiFontStyleElement.innerHTML = this.buildUiFontCss();
-    this.uiOtherStyleElement.innerHTML = this.buildOthersCss();
-
-    if (this.pluginConfig.backgroundEnabled === true) {
-      if (this.pluginConfig.backgroundMode === "simple") {
-        this.applyBackground(uuid.NIL, false);
-      } else if (this.pluginConfig.backgroundMode === "advanced") {
-        if (this.previewMode) {
-          this.applyBackgroundPreview();
-          return;
-        }
-        if (this.pluginConfig.backgroundAdvancedSwitchType === "slideshow") {
-          this.enterSlideShow();
-        }
+    this.leaveSlideShow();
+    this.getThemes().applyStyles();
+    if (this.pluginConfig.backgroundEnabled) {
+      if (!this.previewMode && this.pluginConfig.backgroundMode === "advanced") {
+        this.enterSlideShow();
       }
     }
-    this.logger.info("Background applied.");
   }
 
   apply() {
@@ -103,30 +98,21 @@ export class BackgroundService {
     this.applyStyle();
   }
 
-  applyBackground(id: string, updateTimestamp = true) {
-    this.backgroundStyleElement.innerHTML = this.backgroundStyleElement.innerHTML.replace(/\/\*background-opacity-placeholder\*\/.*/, "/*background-opacity-placeholder*/opacity: 0;");
-    setTimeout(() => {
-      if (id === uuid.NIL) {
-        const backgroundCss = this.buildBackgroundCss(this.pluginConfig);
-        this.backgroundStyleElement.innerHTML = backgroundCss;
-      } else {
-        this.backgroundStyleElement.innerHTML = this.buildBackgroundCss(this.getBackgroundByID(id));
-        this.pluginConfig.backgroundAdvancedCurrentId = id;
-        if (updateTimestamp) {
-          this.pluginConfig.backgroundLastChangedTime = Date.now();
-        }
-      }
-      setTimeout(() => {
-        this.backgroundStyleElement.innerHTML = this.backgroundStyleElement.innerHTML.replace(/\/\*background-opacity-placeholder\*\/.*/, "/*background-opacity-placeholder*/opacity: 1;");
-      }, 500);
-      this.config.save();
-    }, 500);
-  }
-  applyBackgroundPreview() {
-    this.backgroundStyleElement.innerHTML = this.buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex]).replace(
-      /\/\*background-opacity-placeholder\*\/.*/,
-      "/*background-opacity-placeholder*/opacity: 1;",
-    );
+  applyBackground(id: string | null, updateTimestamp = true) {
+    if (id !== null) {
+      this.pluginConfig.backgroundAdvancedCurrentId = id;
+    }
+    if (updateTimestamp) {
+      this.pluginConfig.backgroundLastChangedTime = Date.now();
+    }
+    this.config.save();
+    this.fadeIn = false;
+    this.getThemes().applyStyles();
+    this.leaveFadeTimer();
+    this.fadeTimer = setTimeout(() => {
+      this.fadeIn = true;
+      this.getThemes().applyStyles();
+    }, this.fadeDurationMs);
   }
 
   addBackground() {
@@ -145,10 +131,11 @@ export class BackgroundService {
 
   getBackgroundByID(id: string) {
     const [advancedId, isFolder, fileName] = id.split("|");
-    let realBackground: AdvancedBackground;
     const background = this.pluginConfig.backgrounds.find((value) => value.id === advancedId);
-
-    realBackground = Object.assign({}, background);
+    if (!background) {
+      return null;
+    }
+    const realBackground = Object.assign({}, background);
     if (isFolder === "true") {
       realBackground.backgroundPath += `/${fileName}`;
     }
@@ -174,7 +161,6 @@ export class BackgroundService {
         this.slideShowList.push([id, isFolder, fileName].join("|"));
       }
     }
-    //.map((value) => `${value.id}|${value.isFolder}|${}`);
     if (this.pluginConfig.backgroundAdvancedChooseType === "sequence") {
     } else if (this.pluginConfig.backgroundAdvancedChooseType === "reverse") {
       this.slideShowList.reverse();
@@ -214,20 +200,26 @@ export class BackgroundService {
   }
 
   leaveSlideShow() {
+    this.leaveFadeTimer();
     if (this.backgroundTimer) {
       clearTimeout(this.backgroundTimer);
       this.backgroundTimer = undefined;
     }
-    if (this.transitionTimer) {
-      clearTimeout(this.transitionTimer);
-      this.transitionTimer = undefined;
+  }
+
+  private leaveFadeTimer() {
+    if (this.fadeTimer) {
+      clearTimeout(this.fadeTimer);
+      this.fadeTimer = undefined;
     }
   }
 
   enterPreviewMode(i: number) {
     this.previewMode = true;
     this.previewIndex = i;
-    this.applyStyle();
+    this.leaveSlideShow();
+    this.fadeIn = true;
+    this.getThemes().applyStyles();
   }
 
   leavePreviewMode() {
@@ -238,9 +230,8 @@ export class BackgroundService {
   }
 
   buildBackgroundCss(background: Background) {
-    const { backgroundPath, backgroundShowType } = background;
+    const { backgroundPath } = background;
     const { backgroundFullscreenType, backgroundFullscreenRepeatType, backgroundFullscreenPosition } = background;
-    const { backgroundFloatSize, backgroundFloatX, backgroundFloatY, backgroundFloatXAlign, backgroundFloatYAlign } = background;
     const {
       backgroundOpacity,
       backgroundBlur,
@@ -251,18 +242,15 @@ export class BackgroundService {
       backgroundInvert,
       backgroundSaturate,
       backgroundSepia,
-      backgroundDropShadowEnabled,
-      backgroundDropShadowX,
-      backgroundDropShadowY,
-      backgroundDropShadowBlur,
-      backgroundDropShadowColor,
     } = background;
-    const { backgroundListGroupTransparent, backgroundTerminalToolbarTransparent, backgroundFooterTransparent } = background;
+    const { backgroundListGroupTransparent, backgroundFooterTransparent, backgroundSidebarTransparent } = background;
 
     const css = `
 /* added by tabby-background plugin */
 /* background */
-.content-tab-active {
+.content-tab-active,
+tab-body,
+split-tab {
   background: none;
 }
 .xterm-viewport {
@@ -276,7 +264,6 @@ start-page.content-tab-active::after {
   background: var(--theme-bg-more-2);
 }
 .content-tab-active::before {
-  /*background-opacity-placeholder*/opacity: 0;
   content: ""; position: fixed; left: 0; right: 0; z-index: -1; display: block; width: 100%; height: 100%;
   filter:${
     (backgroundOpacity === 100 ? "" : ` opacity(${backgroundOpacity}%)`) +
@@ -288,30 +275,14 @@ start-page.content-tab-active::after {
     (backgroundInvert === 0 ? "" : ` invert(${backgroundInvert}%)`) +
     (backgroundSaturate === 100 ? "" : ` saturate(${backgroundSaturate}%)`) +
     (backgroundSepia === 0 ? "" : ` sepia(${backgroundSepia}%)`) +
-    (backgroundShowType === "float" && backgroundDropShadowEnabled
-      ? ` drop-shadow(${backgroundDropShadowX}px ${backgroundDropShadowY}px ${backgroundDropShadowBlur}px ${backgroundDropShadowColor})`
-      : "") +
     ";"
   }
+  opacity: ${this.fadeIn ? 1 : 0};
+  transition: opacity ${this.fadeDurationMs}ms ease-in-out;
   background-image: url("${encodeURI(backgroundPath.replaceAll("\\", "/"))}");
-  transition: opacity 0.5s ease-in-out;
-${(() => {
-  if (backgroundShowType === "fullscreen") {
-    return `
   background-repeat: ${backgroundFullscreenRepeatType};
   background-position: ${backgroundFullscreenPosition};
-  background-size: ${backgroundFullscreenType};`;
-  } else if (backgroundShowType === "float") {
-    return `
-  background-repeat: no-repeat;
-  background-position: 
-  ${backgroundFloatXAlign === "center" ? backgroundFloatXAlign : `${backgroundFloatXAlign} ${backgroundFloatX}px`} 
-  ${backgroundFloatYAlign === "center" ? backgroundFloatYAlign : `${backgroundFloatYAlign} ${backgroundFloatY}px`}; 
-  background-size: ${backgroundFloatSize}px;`;
-  } else {
-    throw new Error("ShowType Error!");
-  }
-})()}
+  background-size: ${backgroundFullscreenType};
 }
 /* group list */
 ${
@@ -322,21 +293,21 @@ ${
 }`.trim()
     : ""
 }
-/* toolbar */
-${
-  backgroundTerminalToolbarTransparent > 0
-    ? `
-terminal-toolbar {
-  background: color-mix(in srgb, var(--bs-body-bg) ${100 - backgroundTerminalToolbarTransparent}%, transparent) !important;
-}`.trim()
-    : ""
-}
 /* footer */
 ${
   backgroundFooterTransparent !== 50
     ? `
 footer {
   background: color-mix(in srgb, rgba(0,0,0,1) ${100 - backgroundFooterTransparent}%, transparent) !important;
+}`.trim()
+    : ""
+}
+/* sidebar */
+${
+  backgroundSidebarTransparent > 0
+    ? `
+profile-tree {
+  background-color: color-mix(in srgb, var(--theme-bg-more-2) ${100 - backgroundSidebarTransparent}%, transparent) !important;
 }`.trim()
     : ""
 }`.trim();
@@ -357,7 +328,7 @@ body {
 ${
   uiFontTabBarCloseBtnFix
     ? `
-app-root>.content .tab-bar>.tabs tab-header button {
+tab-header button {
   /*left: 8px;*/
   font-family: "Source Sans Pro";
 }`.trim()
@@ -368,7 +339,6 @@ app-root>.content .tab-bar>.tabs tab-header button {
 
   buildOthersCss() {
     const { othersInactiveTabDimming, othersActiveTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter } = this.pluginConfig;
-
     let css = "/* added by tabby-background plugin */";
     if (othersInactiveTabDimming !== 50) {
       css += `\nsplit-tab>.child {\n  opacity: ${(100 - othersInactiveTabDimming) / 100};\n}\n`;
@@ -386,17 +356,3 @@ app-root>.content .tab-bar>.tabs tab-header button {
     return css;
   }
 }
-
-// export function tabsFlexMinWidth(width: number) {
-//   return `
-// .flex-width {
-//   min-width: ${width}px;
-// }\n`;
-// }
-
-// export function tabsFixedWidth(width: number) {
-//   return `
-// tab-header {
-//   width: ${width}px !important;
-// }\n`;
-// }
