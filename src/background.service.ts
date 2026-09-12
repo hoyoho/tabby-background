@@ -57,12 +57,17 @@ export class BackgroundService implements GlobalStyleProvider {
     return "tabby-background";
   }
 
+  // Keep the terminal surface transparent so the wallpaper shows through it.
+  wantsTransparentTerminal(): boolean {
+    return !!this.pluginConfig?.backgroundEnabled;
+  }
+
   provideStyles(): string {
     if (!this.pluginConfig) {
         return "";
     }
     if (!this.pluginConfig.backgroundEnabled) {
-      return this.buildUiFontCss() + "\n" + this.buildOthersCss();
+      return [this.buildUiFontCss(), this.buildOthersCss()].filter(Boolean).join("\n");
     }
     const parts: string[] = [];
     if (this.previewMode && this.pluginConfig.backgrounds[this.previewIndex]) {
@@ -251,7 +256,7 @@ export class BackgroundService implements GlobalStyleProvider {
 .content-tab-active,
 tab-body,
 split-tab {
-  background: none;
+  background: none !important;
 }
 .xterm-viewport {
   background: none !important;
@@ -339,7 +344,7 @@ tab-header button {
 
   buildOthersCss() {
     const { othersInactiveTabDimming, othersActiveTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter } = this.pluginConfig;
-    let css = "/* added by tabby-background plugin */";
+    let css = "";
     if (othersInactiveTabDimming !== 50) {
       css += `\nsplit-tab>.child {\n  opacity: ${(100 - othersInactiveTabDimming) / 100};\n}\n`;
     }
@@ -353,6 +358,6 @@ tab-header button {
       css += `\nfooter {\n  opacity: 0;\n}\n`;
     }
 
-    return css;
+    return css ? `/* added by tabby-background plugin */${css}` : "";
   }
 }
