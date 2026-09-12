@@ -19,6 +19,11 @@ export default () => ({
   resolve: {
     modules: [".", "src", "node_modules"].map((x) => path.join(__dirname, x)),
     extensions: [".ts", ".js"],
+    alias: {
+      "tabby-core": path.resolve(__dirname, "../tabby/tabby-core"),
+      "tabby-settings": path.resolve(__dirname, "../tabby/tabby-settings"),
+      "tabby-electron": path.resolve(__dirname, "../tabby/tabby-electron"),
+    },
   },
   module: {
     rules: [

@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    // "baseUrl": "src",
+    "baseUrl": ".",
+    "paths": {
+      "tabby-core": ["../tabby/tabby-core"],
+      "tabby-settings": ["../tabby/tabby-settings"],
+      "tabby-electron": ["../tabby/tabby-electron"]
+    },
     "module": "ES2015",
     "moduleResolution": "node",
     "target": "ES2022",
