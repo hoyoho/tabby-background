@@ -311,7 +311,7 @@ footer {
 ${
   backgroundSidebarTransparent > 0
     ? `
-profile-tree {
+.sidebar-main {
   background-color: color-mix(in srgb, var(--theme-bg-more-2) ${100 - backgroundSidebarTransparent}%, transparent) !important;
 }`.trim()
     : ""
