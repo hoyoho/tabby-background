@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Затемнити неактивну розділену панель"
-
 msgid "Add"
 msgstr "Додати"
 
@@ -114,9 +111,6 @@ msgstr "Прозорий нижній колонтитул домашньої с
 msgid "How to choose background"
 msgstr "Як вибрати фон"
 
-msgid "Inactive split panel dimming"
-msgstr "Затемнити активну розділену панель"
-
 msgid "Left"
 msgstr "Ліворуч"
 
@@ -221,3 +215,9 @@ msgstr "Одиниця: px, 0 = вимкнено"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Одиниця: px, 138 = вимкнено"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

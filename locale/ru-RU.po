@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Затемнять неактивную разделённую панель"
-
 msgid "Add"
 msgstr "Добавить"
 
@@ -114,9 +111,6 @@ msgstr "Прозрачный нижний колонтитул главной с
 msgid "How to choose background"
 msgstr "Как выбирать фон"
 
-msgid "Inactive split panel dimming"
-msgstr "Затемнять активную разделённую панель"
-
 msgid "Left"
 msgstr "Слева"
 
@@ -221,3 +215,9 @@ msgstr "Единица: px, 0 = отключено"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Единица: px, 138 = отключено"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

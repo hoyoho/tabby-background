@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Redupkan panel terbagi tidak aktif"
-
 msgid "Add"
 msgstr "Tambah"
 
@@ -114,9 +111,6 @@ msgstr "Footer halaman beranda transparan"
 msgid "How to choose background"
 msgstr "Cara memilih latar belakang"
 
-msgid "Inactive split panel dimming"
-msgstr "Redupkan panel terbagi aktif"
-
 msgid "Left"
 msgstr "Kiri"
 
@@ -221,3 +215,9 @@ msgstr "Satuan: px, 0 = nonaktif"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Satuan: px, 138 = nonaktif"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

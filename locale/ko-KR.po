@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "비활성 분할 패널 어둡게"
-
 msgid "Add"
 msgstr "추가"
 
@@ -114,9 +111,6 @@ msgstr "홈 페이지 바닥글 투명도"
 msgid "How to choose background"
 msgstr "배경 선택 방식"
 
-msgid "Inactive split panel dimming"
-msgstr "활성 분할 패널 어둡게"
-
 msgid "Left"
 msgstr "왼쪽"
 
@@ -221,3 +215,9 @@ msgstr "단위: px, 0 = 비활성화"
 
 msgid "Unit: px, 138 = disable"
 msgstr "단위: px, 138 = 비활성화"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

@@ -201,11 +201,11 @@
               <div class="title" translate>Slideshow interval</div>
               <div class="description" translate>Slideshow interval (second)</div>
             </div>
-            <input class="me-3" type="range" [(ngModel)]="pluginConfig.backgroundAdvancedSlideshowInterval" (mouseup)="apply()" [min]="5" [max]="604800" [step]="1" />
+            <input class="me-3" type="range" [(ngModel)]="pluginConfig.backgroundAdvancedSlideshowInterval" (mouseup)="apply()" [min]="5" [max]="1000" [step]="1" />
             <button class="btn btn-outline-secondary me-3" (click)="pluginConfig.backgroundAdvancedSlideshowInterval = 3600; apply()" ngbTooltip="{{ 'Reset' | translate }}">
               <i class="fas fa-solid fa-rotate-left"></i>
             </button>
-            <input class="form-control param-input" type="number" [(ngModel)]="pluginConfig.backgroundAdvancedSlideshowInterval" (ngModelChange)="apply()" [min]="5" [max]="604800" [step]="1" />
+            <input class="form-control param-input" type="number" [(ngModel)]="pluginConfig.backgroundAdvancedSlideshowInterval" (ngModelChange)="onSlideshowIntervalChange()" [min]="5" [max]="1000" [step]="1" />
           </div>
           <div class="form-line">
             <div class="header">

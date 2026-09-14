@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Ztlumit neaktivní rozdělený panel"
-
 msgid "Add"
 msgstr "Přidat"
 
@@ -114,9 +111,6 @@ msgstr "Průhledné zápatí domovské stránky"
 msgid "How to choose background"
 msgstr "Jak vybrat pozadí"
 
-msgid "Inactive split panel dimming"
-msgstr "Ztlumit aktivní rozdělený panel"
-
 msgid "Left"
 msgstr "Vlevo"
 
@@ -221,3 +215,9 @@ msgstr "Jednotka: px, 0 = zakázáno"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Jednotka: px, 138 = zakázáno"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

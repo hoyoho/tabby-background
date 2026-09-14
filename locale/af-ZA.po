@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Verdof onaktiewe verdeelde paneel"
-
 msgid "Add"
 msgstr "Voeg by"
 
@@ -114,9 +111,6 @@ msgstr "Deursigtige tuisblad-voetskrif"
 msgid "How to choose background"
 msgstr "Hoe om die agtergrond te kies"
 
-msgid "Inactive split panel dimming"
-msgstr "Verdof aktiewe verdeelde paneel"
-
 msgid "Left"
 msgstr "Links"
 
@@ -221,3 +215,9 @@ msgstr "Eenheid: px, 0 = gedeaktiveer"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Eenheid: px, 138 = gedeaktiveer"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

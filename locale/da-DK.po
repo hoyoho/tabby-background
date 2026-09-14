@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Dæmp inaktivt opdelt panel"
-
 msgid "Add"
 msgstr "Tilføj"
 
@@ -114,9 +111,6 @@ msgstr "Gennemsigtig sidefod på startsiden"
 msgid "How to choose background"
 msgstr "Sådan vælges baggrunden"
 
-msgid "Inactive split panel dimming"
-msgstr "Dæmp aktivt opdelt panel"
-
 msgid "Left"
 msgstr "Venstre"
 
@@ -221,3 +215,9 @@ msgstr "Enhed: px, 0 = deaktiveret"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Enhed: px, 138 = deaktiveret"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

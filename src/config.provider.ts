@@ -61,8 +61,8 @@ export type BackgroundPluginConfig = Background & {
   uiFontFamily: string;
   uiFontSize: number;
   uiFontTabBarCloseBtnFix: boolean;
-  othersInactiveTabDimming: number;
-  othersActiveTabDimming: number;
+  othersUnfocusedTabDimming: number;
+  othersFocusedTabDimming: number;
   othersTabBarPersistentSpaceMinWidth: number;
   othersHideFooter: boolean;
   backgroundMode: "simple" | "advanced";
@@ -98,8 +98,8 @@ export class BackgroundConfigProvider extends ConfigProvider {
       uiFontFamily: "Source Sans Pro",
       uiFontSize: 14,
       uiFontTabBarCloseBtnFix: true,
-      othersInactiveTabDimming: 50,
-      othersActiveTabDimming: 0,
+      othersUnfocusedTabDimming: 50,
+      othersFocusedTabDimming: 0,
       othersTabBarPersistentSpaceMinWidth: 138,
       othersHideFooter: false,
       backgroundMode: "simple",

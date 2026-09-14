@@ -1,13 +1,14 @@
-import { Injectable, Injector } from "@angular/core";
+import { Injectable, Injector, OnDestroy } from "@angular/core";
 import { ConfigService, LogService, Logger, ThemesService, GlobalStyleProvider, TranslateService } from "tabby-core";
 import { AdvancedBackground, Background, BackgroundPluginConfig, DefaultBackground } from "./config.provider";
 import { translations } from "./translations";
 import * as uuid from "uuid";
 import { readdirSync } from "fs";
 import path from "path";
+import { pathToFileURL } from "url";
 
 @Injectable({ providedIn: "root" })
-export class BackgroundService implements GlobalStyleProvider {
+export class BackgroundService implements GlobalStyleProvider, OnDestroy {
   private logger: Logger;
   pluginConfig: BackgroundPluginConfig;
   private backgroundTimer: NodeJS.Timeout;
@@ -19,6 +20,9 @@ export class BackgroundService implements GlobalStyleProvider {
   private fadeIn = true;
   private readonly fadeDurationMs = 500;
   private themes: ThemesService | null = null;
+  // Inferred from ConfigService.changed$.subscribe so we don't import a
+  // second rxjs Subscription copy (tabby-core ships its own).
+  private configChangedSub: ReturnType<ConfigService["changed$"]["subscribe"]> | null = null;
 
   constructor(
     public config: ConfigService,
@@ -44,6 +48,22 @@ export class BackgroundService implements GlobalStyleProvider {
         }
       });
     });
+
+    // Re-sync `pluginConfig` and re-apply styles whenever the config store is
+    // replaced. `ConfigService.load()` swaps `this.store` for a new proxy on
+    // every cross-window broadcast (hostApp.configChangeBroadcast$) — without
+    // this subscription `pluginConfig` keeps pointing at the stale object and
+    // another window's toggle (e.g. switching the background off) would never
+    // be reflected here.
+    this.configChangedSub = this.config.changed$.subscribe(() => {
+      this.pluginConfig = this.config.store.backgroundPlugin;
+      this.applyStyle();
+    });
+  }
+
+  ngOnDestroy (): void {
+    this.configChangedSub?.unsubscribe();
+    this.configChangedSub = null;
   }
 
   // Lazily resolved: BackgroundService itself is a GlobalStyleProvider whose
@@ -74,11 +94,15 @@ export class BackgroundService implements GlobalStyleProvider {
       parts.push(this.buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex]));
     } else if (this.pluginConfig.backgroundMode === "simple") {
       parts.push(this.buildBackgroundCss(this.pluginConfig));
-    } else if (this.pluginConfig.backgroundAdvancedCurrentId) {
-      const background = this.getBackgroundByID(this.pluginConfig.backgroundAdvancedCurrentId);
-      if (background) {
-        parts.push(this.buildBackgroundCss(background));
+    } else {
+      // Advanced mode: try the selected background, fall back to the first
+      // available one, then to the simple-mode config so the pane never goes
+      // solid black when no advanced background is selected yet.
+      let background = this.getBackgroundByID(this.pluginConfig.backgroundAdvancedCurrentId);
+      if (!background) {
+        background = this.pluginConfig.backgrounds.find(b => b.enabled) ?? this.pluginConfig.backgrounds[0];
       }
+      parts.push(this.buildBackgroundCss(background ?? this.pluginConfig));
     }
     parts.push(this.buildUiFontCss());
     parts.push(this.buildOthersCss());
@@ -110,7 +134,12 @@ export class BackgroundService implements GlobalStyleProvider {
     if (updateTimestamp) {
       this.pluginConfig.backgroundLastChangedTime = Date.now();
     }
-    this.config.save();
+    // NOTE: intentionally no `config.save()` here. `backgroundAdvancedCurrentId`
+    // and `backgroundLastChangedTime` are slideshow runtime state — persisting
+    // them would fire `config.changed$`, which re-enters `applyStyle()` ->
+    // `enterSlideShow()` -> `applyBackground()`, pinning `fadeIn` to false and
+    // leaving the background invisible. Persistence only happens in `apply()`
+    // for user-initiated config changes.
     this.fadeIn = false;
     this.getThemes().applyStyles();
     this.leaveFadeTimer();
@@ -234,6 +263,29 @@ export class BackgroundService implements GlobalStyleProvider {
     }
   }
 
+  /**
+   * Convert a filesystem path to a URL usable in CSS `url()`.
+   *
+   * Absolute Windows paths (e.g. `C:\Users\...`) would be parsed as an unknown
+   * protocol (`C:`) inside `url()`, so we convert them to `file:///` URLs via
+   * `pathToFileURL` (which also handles percent-encoding correctly).
+   *
+   * Relative paths resolve against the app's own `file://` origin and only
+   * need forward-slash normalization + `encodeURI`.
+   */
+  private toFileUrl(p: string): string {
+    const normalized = p.replaceAll("\\", "/");
+    const isAbsolute = /^[a-zA-Z]:\//.test(normalized) || normalized.startsWith("/");
+    if (!isAbsolute) {
+      return encodeURI(normalized);
+    }
+    try {
+      return pathToFileURL(p).href;
+    } catch {
+      return `file:///${encodeURI(normalized)}`;
+    }
+  }
+
   buildBackgroundCss(background: Background) {
     const { backgroundPath } = background;
     const { backgroundFullscreenType, backgroundFullscreenRepeatType, backgroundFullscreenPosition } = background;
@@ -284,7 +336,7 @@ start-page.content-tab-active::after {
   }
   opacity: ${this.fadeIn ? 1 : 0};
   transition: opacity ${this.fadeDurationMs}ms ease-in-out;
-  background-image: url("${encodeURI(backgroundPath.replaceAll("\\", "/"))}");
+  background-image: url("${this.toFileUrl(backgroundPath)}");
   background-repeat: ${backgroundFullscreenRepeatType};
   background-position: ${backgroundFullscreenPosition};
   background-size: ${backgroundFullscreenType};
@@ -343,13 +395,18 @@ tab-header button {
   }
 
   buildOthersCss() {
-    const { othersInactiveTabDimming, othersActiveTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter } = this.pluginConfig;
+    const { othersUnfocusedTabDimming, othersFocusedTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter } = this.pluginConfig;
     let css = "";
-    if (othersInactiveTabDimming !== 50) {
-      css += `\nsplit-tab>.child {\n  opacity: ${(100 - othersInactiveTabDimming) / 100};\n}\n`;
+    // Focused/unfocused follows the workspace's global focus rather than the
+    // per-pane foreground tab: `.globally-focused` is set by WorkspaceComponent
+    // on every session whose pane holds the global focus (all panes in
+    // focus-all mode). Unfocused panes' visible sessions get dimmed by
+    // `othersUnfocusedTabDimming`, the focused pane by `othersFocusedTabDimming`.
+    if (othersUnfocusedTabDimming !== 50) {
+      css += `\nsplit-tab>.child:not(.globally-focused) {\n  opacity: ${(100 - othersUnfocusedTabDimming) / 100};\n}\n`;
     }
-    if (othersActiveTabDimming !== 0) {
-      css += `\nsplit-tab>.child.focused {\n  opacity: ${(100 - othersActiveTabDimming) / 100};\n}\n`;
+    if (othersFocusedTabDimming !== 0) {
+      css += `\nsplit-tab>.child.globally-focused {\n  opacity: ${(100 - othersFocusedTabDimming) / 100};\n}\n`;
     }
     if (othersTabBarPersistentSpaceMinWidth !== 138) {
       css += `\n.btn-space.persistent {\n  min-width: ${othersTabBarPersistentSpaceMinWidth}px !important;\n}\n`;

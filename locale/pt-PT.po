@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Escurecer painel dividido inativo"
-
 msgid "Add"
 msgstr "Adicionar"
 
@@ -114,9 +111,6 @@ msgstr "Rodapé da página inicial transparente"
 msgid "How to choose background"
 msgstr "Como escolher o fundo"
 
-msgid "Inactive split panel dimming"
-msgstr "Escurecer painel dividido ativo"
-
 msgid "Left"
 msgstr "Esquerda"
 
@@ -221,3 +215,9 @@ msgstr "Unidade: px, 0 = desativado"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Unidade: px, 138 = desativado"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

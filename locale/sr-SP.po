@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Затамни неактивни подељени панел"
-
 msgid "Add"
 msgstr "Додај"
 
@@ -114,9 +111,6 @@ msgstr "Прозирно подножје почетне странице"
 msgid "How to choose background"
 msgstr "Како изабрати позадину"
 
-msgid "Inactive split panel dimming"
-msgstr "Затамни активни подељени панел"
-
 msgid "Left"
 msgstr "Лево"
 
@@ -221,3 +215,9 @@ msgstr "Јединица: px, 0 = онемогућено"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Јединица: px, 138 = онемогућено"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

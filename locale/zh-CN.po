@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "非活动拆分页面变暗"
-
 msgid "Add"
 msgstr "添加"
 
@@ -114,9 +111,6 @@ msgstr "主页页脚透明度"
 msgid "How to choose background"
 msgstr "如何抽取背景"
 
-msgid "Inactive split panel dimming"
-msgstr "活动拆分页面变暗"
-
 msgid "Left"
 msgstr "左侧"
 
@@ -221,3 +215,9 @@ msgstr "单位：像素，0 = 禁用"
 
 msgid "Unit: px, 138 = disable"
 msgstr "单位：像素，138 = 禁用"
+
+msgid "Focused split panel dimming"
+msgstr "聚焦拆分页面变暗"
+
+msgid "Unfocused split panel dimming"
+msgstr "非聚焦拆分页面变暗"

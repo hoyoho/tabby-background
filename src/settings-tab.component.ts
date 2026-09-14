@@ -171,18 +171,18 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
 
   others: any[] = [
     {
-      title: "Inactive split panel dimming",
+      title: "Unfocused split panel dimming",
       description: "Unit: %, 50 = default",
-      model: "othersInactiveTabDimming",
+      model: "othersUnfocusedTabDimming",
       default: "50",
       min: "0",
       max: "100",
       step: "1",
     },
     {
-      title: "Active split panel dimming",
+      title: "Focused split panel dimming",
       description: "Unit: %, 0 = default",
-      model: "othersActiveTabDimming",
+      model: "othersFocusedTabDimming",
       default: "0",
       min: "0",
       max: "100",
@@ -219,6 +219,12 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
   }
   async ngOnInit() {
     this.fonts = await this.platform.listFonts();
+    // Make sure the currently selected font is shown in the dropdown even if
+    // `listFonts()` didn't return it (e.g. custom font name or stale cache).
+    const currentFont = this.pluginConfig.uiFontFamily;
+    if (currentFont && !this.fonts.includes(currentFont)) {
+      this.fonts.unshift(currentFont);
+    }
   }
   ngOnDestroy(): void {
     this.background.leavePreviewMode();
@@ -249,6 +255,16 @@ export class BackgroundSettingsTabComponent implements OnDestroy {
   apply() {
     this.background.apply();
     // this.toastr.info(this.translate.instant("Background applied!"));
+  }
+
+  onSlideshowIntervalChange() {
+    const interval = this.pluginConfig.backgroundAdvancedSlideshowInterval;
+    if (interval > 1000) {
+      this.pluginConfig.backgroundAdvancedSlideshowInterval = 1000;
+    } else if (interval < 5) {
+      this.pluginConfig.backgroundAdvancedSlideshowInterval = 5;
+    }
+    this.apply();
   }
 
   dropBackgroundItem(event: CdkDragDrop<AdvancedBackground[]>) {

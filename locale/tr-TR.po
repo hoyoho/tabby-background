@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Etkin olmayan bölünmüş paneli karart"
-
 msgid "Add"
 msgstr "Ekle"
 
@@ -114,9 +111,6 @@ msgstr "Ana sayfa altbilgisi şeffaf"
 msgid "How to choose background"
 msgstr "Arka plan nasıl seçilir"
 
-msgid "Inactive split panel dimming"
-msgstr "Etkin bölünmüş paneli karart"
-
 msgid "Left"
 msgstr "Sol"
 
@@ -221,3 +215,9 @@ msgstr "Birim: px, 0 = devre dışı"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Birim: px, 138 = devre dışı"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""

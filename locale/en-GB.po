@@ -3,9 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Active split panel dimming"
-msgstr "Active split panel dimming"
-
 msgid "Add"
 msgstr "Add"
 
@@ -114,9 +111,6 @@ msgstr "Home page footer transparent"
 msgid "How to choose background"
 msgstr "How to choose background"
 
-msgid "Inactive split panel dimming"
-msgstr "Inactive split panel dimming"
-
 msgid "Left"
 msgstr "Left"
 
@@ -221,3 +215,9 @@ msgstr "Unit: px, 0 = disable"
 
 msgid "Unit: px, 138 = disable"
 msgstr "Unit: px, 138 = disable"
+
+msgid "Focused split panel dimming"
+msgstr ""
+
+msgid "Unfocused split panel dimming"
+msgstr ""
