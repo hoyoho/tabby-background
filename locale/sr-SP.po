@@ -42,7 +42,7 @@ msgstr "Инвертуј позадину"
 msgid "Background mode"
 msgstr "Режим позадине"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Непрозирност позадине"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Јединица: %, 0 = онемогућено, примени на п�
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Јединица: %, 0 = онемогућено, примени на бочну траку профила"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Јединица: %, 100 = онемогућено"
 
 msgid "Unit: %, 50 = default"

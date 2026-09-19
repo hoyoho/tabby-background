@@ -42,8 +42,8 @@ msgstr "背景反轉"
 msgid "Background mode"
 msgstr "背景模式"
 
-msgid "Background opacity"
-msgstr "背景不透明度"
+msgid "Background visibility"
+msgstr "背景可見度"
 
 msgid "Background path"
 msgstr "背景圖片路徑"
@@ -198,8 +198,8 @@ msgstr "單位：%，0 = 停用，套用到首頁選單和其他分組列表"
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "單位：%，0 = 停用，套用到設定側邊欄"
 
-msgid "Unit: %, 100 = disable"
-msgstr "單位：%，100 = 停用"
+msgid "Unit: %, 100 = fully visible"
+msgstr "單位：%，100 = 完全可見"
 
 msgid "Unit: %, 50 = default"
 msgstr "單位：%，50 = 預設"

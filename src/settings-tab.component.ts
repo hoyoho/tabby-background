@@ -57,8 +57,8 @@ import { debounce } from "utils-decorators";
 export class BackgroundSettingsTabComponent implements OnDestroy {
   filters: any[] = [
     {
-      title: "Background opacity",
-      description: "Unit: %, 100 = disable",
+      title: "Background visibility",
+      description: "Unit: %, 100 = fully visible",
       model: "backgroundOpacity",
       default: "100",
       min: "0",

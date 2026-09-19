@@ -42,7 +42,7 @@ msgstr "Inverti sfondo"
 msgid "Background mode"
 msgstr "Modalità sfondo"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Opacità sfondo"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Unità: %, 0 = disabilitato, applica al menu home e altre liste di grupp
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Unità: %, 0 = disabilitato, applica alla barra laterale dei profili"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Unità: %, 100 = disabilitato"
 
 msgid "Unit: %, 50 = default"

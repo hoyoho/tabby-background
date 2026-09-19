@@ -42,7 +42,7 @@ msgstr "Invertir fondo"
 msgid "Background mode"
 msgstr "Modo de fondo"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Opacidad de fondo"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Unidad: %, 0 = deshabilitado, aplicar al menú de inicio y otras listas 
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Unidad: %, 0 = deshabilitado, aplicar a la barra lateral de perfiles"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Unidad: %, 100 = deshabilitado"
 
 msgid "Unit: %, 50 = default"

@@ -42,7 +42,7 @@ msgstr "背景の反転"
 msgid "Background mode"
 msgstr "背景モード"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "背景の不透明度"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "単位：%、0 = 無効、ホームメニューとその他のグルー�
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "単位：%、0 = 無効、プロファイルサイドバーに適用"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "単位：%、100 = 無効"
 
 msgid "Unit: %, 50 = default"

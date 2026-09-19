@@ -42,8 +42,8 @@ msgstr "Background invert"
 msgid "Background mode"
 msgstr "Background mode"
 
-msgid "Background opacity"
-msgstr "Background opacity"
+msgid "Background visibility"
+msgstr "Background visibility"
 
 msgid "Background path"
 msgstr "Background path"
@@ -198,8 +198,8 @@ msgstr "Unit: %, 0 = disable, Apply to home menu and other group list"
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Unit: %, 0 = disable, Apply to the profile sidebar"
 
-msgid "Unit: %, 100 = disable"
-msgstr "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
+msgstr "Unit: %, 100 = fully visible"
 
 msgid "Unit: %, 50 = default"
 msgstr "Unit: %, 50 = default"

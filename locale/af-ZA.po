@@ -42,7 +42,7 @@ msgstr "Keer agtergrond om"
 msgid "Background mode"
 msgstr "Agtergrondmodus"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Agtergrondondeursigtigheid"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Eenheid: %, 0 = gedeaktiveer, pas toe op tuislys en ander groeplyste"
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Eenheid: %, 0 = gedeaktiveer, pas toe op die profiel-sybalk"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Eenheid: %, 100 = gedeaktiveer"
 
 msgid "Unit: %, 50 = default"

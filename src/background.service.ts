@@ -77,8 +77,10 @@ export class BackgroundService implements GlobalStyleProvider, OnDestroy {
     return "tabby-background";
   }
 
-  // Keep the terminal surface transparent so the wallpaper shows through it.
-  wantsTransparentTerminal(): boolean {
+  // Core keeps the terminal surface transparent and stands aside from its own
+  // full-window fills (start page, tab containers) so the wallpaper shows
+  // through. See GlobalStyleProvider in tabby-core.
+  wantsCustomBackground(): boolean {
     return !!this.pluginConfig?.backgroundEnabled;
   }
 
@@ -304,22 +306,9 @@ export class BackgroundService implements GlobalStyleProvider, OnDestroy {
 
     const css = `
 /* added by tabby-background plugin */
-/* background */
-.content-tab-active,
-tab-body,
-split-tab {
-  background: none !important;
-}
-.xterm-viewport {
-  background: none !important;
-}
-.content-tab-active::after {
-  content: ""; position: fixed; left: 0; right: 0; z-index: -2; display: block; width: 100%; height: 100%;
-  background: var(--body-bg);
-}
-start-page.content-tab-active::after {
-  background: var(--theme-bg-more-2);
-}
+/* The image is painted above the window tint core puts on \`body\`; core keeps
+   the tab containers and the terminal surface transparent for us, so no
+   background needs overriding here (see GlobalStyleProvider). */
 .content-tab-active::before {
   content: ""; position: fixed; left: 0; right: 0; z-index: -1; display: block; width: 100%; height: 100%;
   filter:${
@@ -355,7 +344,7 @@ ${
   backgroundFooterTransparent !== 50
     ? `
 footer {
-  background: color-mix(in srgb, rgba(0,0,0,1) ${100 - backgroundFooterTransparent}%, transparent) !important;
+  --start-page-footer-bg: color-mix(in srgb, rgba(0,0,0,1) ${100 - backgroundFooterTransparent}%, transparent);
 }`.trim()
     : ""
 }
@@ -364,7 +353,7 @@ ${
   backgroundSidebarTransparent > 0
     ? `
 .sidebar-main {
-  background-color: color-mix(in srgb, var(--theme-bg-more-2) ${100 - backgroundSidebarTransparent}%, transparent) !important;
+  --sidebar-bg: color-mix(in srgb, var(--theme-bg-more-2) ${100 - backgroundSidebarTransparent}%, transparent);
 }`.trim()
     : ""
 }`.trim();
@@ -402,7 +391,7 @@ tab-header button {
     // on every session whose pane holds the global focus (all panes in
     // focus-all mode). Unfocused panes' visible sessions get dimmed by
     // `othersUnfocusedTabDimming`, the focused pane by `othersFocusedTabDimming`.
-    if (othersUnfocusedTabDimming !== 50) {
+    if (othersUnfocusedTabDimming !== 0) {
       css += `\nsplit-tab>.child:not(.globally-focused) {\n  opacity: ${(100 - othersUnfocusedTabDimming) / 100};\n}\n`;
     }
     if (othersFocusedTabDimming !== 0) {

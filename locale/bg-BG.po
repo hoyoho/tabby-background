@@ -42,7 +42,7 @@ msgstr "Инвертиране на фона"
 msgid "Background mode"
 msgstr "Режим на фона"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Непрозрачност на фона"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Единица: %, 0 = изключено, приложи към нач�
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Единица: %, 0 = изключено, приложи към страничната лента на профилите"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Единица: %, 100 = изключено"
 
 msgid "Unit: %, 50 = default"

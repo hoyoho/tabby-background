@@ -42,7 +42,7 @@ msgstr "Invertera bakgrund"
 msgid "Background mode"
 msgstr "Bakgrundsläge"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Bakgrundsopacitet"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Enhet: %, 0 = inaktiverad, tillämpa på startmenyn och andra grupplisto
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Enhet: %, 0 = inaktiverad, tillämpa på profilsidofältet"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Enhet: %, 100 = inaktiverad"
 
 msgid "Unit: %, 50 = default"

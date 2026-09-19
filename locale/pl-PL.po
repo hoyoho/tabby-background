@@ -42,7 +42,7 @@ msgstr "Odwróć tło"
 msgid "Background mode"
 msgstr "Tryb tła"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Krycie tła"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Jednostka: %, 0 = wyłączone, zastosuj do menu głównego i innych list
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Jednostka: %, 0 = wyłączone, zastosuj do paska bocznego profili"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Jednostka: %, 100 = wyłączone"
 
 msgid "Unit: %, 50 = default"

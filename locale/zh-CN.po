@@ -42,8 +42,8 @@ msgstr "背景反转"
 msgid "Background mode"
 msgstr "背景模式"
 
-msgid "Background opacity"
-msgstr "背景不透明度"
+msgid "Background visibility"
+msgstr "背景可见度"
 
 msgid "Background path"
 msgstr "背景图片路径"
@@ -198,8 +198,8 @@ msgstr "单位：%，0 = 禁用，应用到首页菜单和其他分组列表"
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "单位：%，0 = 禁用，应用到配置侧边栏"
 
-msgid "Unit: %, 100 = disable"
-msgstr "单位：%，100 = 禁用"
+msgid "Unit: %, 100 = fully visible"
+msgstr "单位：%，100 = 完全可见"
 
 msgid "Unit: %, 50 = default"
 msgstr "单位：%，50 = 默认"

@@ -42,7 +42,7 @@ msgstr "Інвертувати фон"
 msgid "Background mode"
 msgstr "Режим фону"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Непрозорість фону"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Одиниця: %, 0 = вимкнено, застосувати до г�
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Одиниця: %, 0 = вимкнено, застосувати до бічної панелі профілів"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Одиниця: %, 100 = вимкнено"
 
 msgid "Unit: %, 50 = default"

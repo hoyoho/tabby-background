@@ -42,7 +42,7 @@ msgstr "Invertovat pozadí"
 msgid "Background mode"
 msgstr "Režim pozadí"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Neprůhlednost pozadí"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Jednotka: %, 0 = zakázáno, použít na domovské menu a další seznam
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Jednotka: %, 0 = zakázáno, použít na postranní panel profilů"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Jednotka: %, 100 = zakázáno"
 
 msgid "Unit: %, 50 = default"

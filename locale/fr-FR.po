@@ -42,7 +42,7 @@ msgstr "Inverser l'arrière-plan"
 msgid "Background mode"
 msgstr "Mode d'arrière-plan"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Opacité d'arrière-plan"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Unité : %, 0 = désactivé, appliquer au menu d'accueil et aux autres l
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Unité : %, 0 = désactivé, appliquer à la barre latérale des profils"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Unité : %, 100 = désactivé"
 
 msgid "Unit: %, 50 = default"

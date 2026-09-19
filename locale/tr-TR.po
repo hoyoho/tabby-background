@@ -42,7 +42,7 @@ msgstr "Arka planı ters çevir"
 msgid "Background mode"
 msgstr "Arka plan modu"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Arka plan opaklığı"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Birim: %, 0 = devre dışı, ana menüye ve diğer grup listelerine uygu
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Birim: %, 0 = devre dışı, profil kenar çubuğuna uygula"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Birim: %, 100 = devre dışı"
 
 msgid "Unit: %, 50 = default"

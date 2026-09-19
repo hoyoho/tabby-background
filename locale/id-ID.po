@@ -42,7 +42,7 @@ msgstr "Balikkan latar belakang"
 msgid "Background mode"
 msgstr "Mode latar belakang"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Opasitas latar belakang"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Satuan: %, 0 = nonaktif, terapkan ke menu beranda dan daftar grup lainny
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Satuan: %, 0 = nonaktif, terapkan ke bilah samping profil"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Satuan: %, 100 = nonaktif"
 
 msgid "Unit: %, 50 = default"

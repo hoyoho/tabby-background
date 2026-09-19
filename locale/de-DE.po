@@ -42,7 +42,7 @@ msgstr "Hintergrund invertieren"
 msgid "Background mode"
 msgstr "Hintergrundmodus"
 
-msgid "Background opacity"
+msgid "Background visibility"
 msgstr "Hintergrunddeckkraft"
 
 msgid "Background path"
@@ -198,7 +198,7 @@ msgstr "Einheit: %, 0 = deaktiviert, auf Startmenü und andere Gruppenlisten anw
 msgid "Unit: %, 0 = disable, Apply to the profile sidebar"
 msgstr "Einheit: %, 0 = deaktiviert, auf die Profil-Seitenleiste anwenden"
 
-msgid "Unit: %, 100 = disable"
+msgid "Unit: %, 100 = fully visible"
 msgstr "Einheit: %, 100 = deaktiviert"
 
 msgid "Unit: %, 50 = default"
