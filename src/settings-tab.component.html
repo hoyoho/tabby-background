@@ -535,6 +535,13 @@
       </ng-container>
       <div class="form-line">
         <div class="header">
+          <div class="title" translate>Solid popup panels</div>
+          <div class="description" translate>Menus, dialogs, tooltips, notifications and the search panel stay opaque</div>
+        </div>
+        <toggle [(ngModel)]="pluginConfig.othersSolidPopups" (ngModelChange)="apply()"> </toggle>
+      </div>
+      <div class="form-line">
+        <div class="header">
           <div class="title" translate>Hide main menu footer</div>
           <div class="description" translate>Hide the main menu footer(bottom bar)</div>
         </div>

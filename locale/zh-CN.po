@@ -114,6 +114,9 @@ msgstr "如何抽取背景"
 msgid "Left"
 msgstr "左侧"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "菜单、对话框、提示、通知和搜索面板保持实心"
+
 msgid "Name"
 msgstr "名称"
 
@@ -170,6 +173,9 @@ msgstr "幻灯片间隔"
 
 msgid "Slideshow interval (second)"
 msgstr "幻灯片间隔（秒）"
+
+msgid "Solid popup panels"
+msgstr "弹出面板不透明"
 
 msgid "Style"
 msgstr "样式"

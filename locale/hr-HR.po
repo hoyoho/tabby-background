@@ -114,6 +114,9 @@ msgstr "Kako odabrati pozadinu"
 msgid "Left"
 msgstr "Lijevo"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Izbornici, dijalozi, opisi, obavijesti i ploča pretrage ostaju neprozirni"
+
 msgid "Name"
 msgstr "Naziv"
 
@@ -170,6 +173,9 @@ msgstr "Interval slideshowa"
 
 msgid "Slideshow interval (second)"
 msgstr "Interval slideshowa (sekunde)"
+
+msgid "Solid popup panels"
+msgstr "Neprozirni skočni paneli"
 
 msgid "Style"
 msgstr "Stil"

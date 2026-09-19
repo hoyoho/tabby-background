@@ -114,6 +114,9 @@ msgstr "Cara memilih latar belakang"
 msgid "Left"
 msgstr "Kiri"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menu, dialog, tooltip, notifikasi, dan panel pencarian tetap tidak transparan"
+
 msgid "Name"
 msgstr "Nama"
 
@@ -170,6 +173,9 @@ msgstr "Interval tayangan slide"
 
 msgid "Slideshow interval (second)"
 msgstr "Interval tayangan slide (detik)"
+
+msgid "Solid popup panels"
+msgstr "Panel sembul tidak transparan"
 
 msgid "Style"
 msgstr "Gaya"

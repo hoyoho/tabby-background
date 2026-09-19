@@ -65,6 +65,7 @@ export type BackgroundPluginConfig = Background & {
   othersFocusedTabDimming: number;
   othersTabBarPersistentSpaceMinWidth: number;
   othersHideFooter: boolean;
+  othersSolidPopups: boolean;
   backgroundMode: "simple" | "advanced";
   backgrounds: AdvancedBackground[];
   backgroundAdvancedChooseType: "sequence" | "random" | "reverse";
@@ -102,6 +103,7 @@ export class BackgroundConfigProvider extends ConfigProvider {
       othersFocusedTabDimming: 0,
       othersTabBarPersistentSpaceMinWidth: 138,
       othersHideFooter: false,
+      othersSolidPopups: false,
       backgroundMode: "simple",
       backgrounds: [],
       backgroundAdvancedChooseType: "sequence",

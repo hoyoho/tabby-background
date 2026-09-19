@@ -114,6 +114,9 @@ msgstr "Comment choisir l'arrière-plan"
 msgid "Left"
 msgstr "Gauche"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Les menus, boîtes de dialogue, infobulles, notifications et le panneau de recherche restent opaques"
+
 msgid "Name"
 msgstr "Nom"
 
@@ -170,6 +173,9 @@ msgstr "Intervalle du diaporama"
 
 msgid "Slideshow interval (second)"
 msgstr "Intervalle du diaporama (secondes)"
+
+msgid "Solid popup panels"
+msgstr "Panneaux contextuels opaques"
 
 msgid "Style"
 msgstr "Style"

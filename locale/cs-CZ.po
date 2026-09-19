@@ -114,6 +114,9 @@ msgstr "Jak vybrat pozadí"
 msgid "Left"
 msgstr "Vlevo"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Nabídky, dialogy, bubliny nápovědy, oznámení a panel vyhledávání zůstanou neprůhledné"
+
 msgid "Name"
 msgstr "Název"
 
@@ -170,6 +173,9 @@ msgstr "Interval prezentace"
 
 msgid "Slideshow interval (second)"
 msgstr "Interval prezentace (sekundy)"
+
+msgid "Solid popup panels"
+msgstr "Neprůhledné vyskakovací panely"
 
 msgid "Style"
 msgstr "Styl"

@@ -384,7 +384,7 @@ tab-header button {
   }
 
   buildOthersCss() {
-    const { othersUnfocusedTabDimming, othersFocusedTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter } = this.pluginConfig;
+    const { othersUnfocusedTabDimming, othersFocusedTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter, othersSolidPopups } = this.pluginConfig;
     let css = "";
     // Focused/unfocused follows the workspace's global focus rather than the
     // per-pane foreground tab: `.globally-focused` is set by WorkspaceComponent
@@ -402,6 +402,19 @@ tab-header button {
     }
     if (othersHideFooter) {
       css += `\nfooter {\n  opacity: 0;\n}\n`;
+    }
+    if (othersSolidPopups) {
+      // Popup panels (menus, dialogs, tooltips, notifications, the search panel)
+      // are core's frosted surfaces, and core tints all of them through the one
+      // `--frost-tint` token (see theme.new.scss). Pointing that token back at
+      // the opaque shade keeps this rule from having to list the surfaces, so
+      // any surface core adds later follows along.
+      //
+      // `html` in the selector is only about precedence: core declares the same
+      // token on `body.vibrancy`, and the plugin's styles live in their own
+      // <style> element, so an equal-specificity rule would depend on the order
+      // the two elements happen to be inserted in.
+      css += `\nhtml body.vibrancy {\n  --frost-tint: var(--theme-bg-more-solid);\n}\n`;
     }
 
     return css ? `/* added by tabby-background plugin */${css}` : "";

@@ -114,6 +114,9 @@ msgstr "Как да изберете фон"
 msgid "Left"
 msgstr "Ляво"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Менюта, диалогови прозорци, подсказки, известия и панелът за търсене остават непрозрачни"
+
 msgid "Name"
 msgstr "Име"
 
@@ -170,6 +173,9 @@ msgstr "Интервал на слайдшоу"
 
 msgid "Slideshow interval (second)"
 msgstr "Интервал на слайдшоу (секунди)"
+
+msgid "Solid popup panels"
+msgstr "Плътни изскачащи панели"
 
 msgid "Style"
 msgstr "Стил"

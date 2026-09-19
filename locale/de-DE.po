@@ -114,6 +114,9 @@ msgstr "Hintergrundauswahl"
 msgid "Left"
 msgstr "Links"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menüs, Dialoge, Tooltips, Benachrichtigungen und das Suchfeld bleiben undurchsichtig"
+
 msgid "Name"
 msgstr "Name"
 
@@ -170,6 +173,9 @@ msgstr "Diashow-Intervall"
 
 msgid "Slideshow interval (second)"
 msgstr "Diashow-Intervall (Sekunden)"
+
+msgid "Solid popup panels"
+msgstr "Undurchsichtige Popup-Panels"
 
 msgid "Style"
 msgstr "Stil"

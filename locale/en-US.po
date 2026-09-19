@@ -114,6 +114,9 @@ msgstr "How to choose background"
 msgid "Left"
 msgstr "Left"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+
 msgid "Name"
 msgstr "Name"
 
@@ -170,6 +173,9 @@ msgstr "Slideshow interval"
 
 msgid "Slideshow interval (second)"
 msgstr "Slideshow interval (second)"
+
+msgid "Solid popup panels"
+msgstr "Solid popup panels"
 
 msgid "Style"
 msgstr "Style"

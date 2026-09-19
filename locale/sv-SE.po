@@ -114,6 +114,9 @@ msgstr "Hur bakgrunden väljs"
 msgid "Left"
 msgstr "Vänster"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menyer, dialogrutor, verktygstips, aviseringar och sökpanelen förblir ogenomskinliga"
+
 msgid "Name"
 msgstr "Namn"
 
@@ -170,6 +173,9 @@ msgstr "Bildspelsintervall"
 
 msgid "Slideshow interval (second)"
 msgstr "Bildspelsintervall (sekunder)"
+
+msgid "Solid popup panels"
+msgstr "Ogenomskinliga popup-paneler"
 
 msgid "Style"
 msgstr "Stil"

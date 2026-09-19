@@ -114,6 +114,9 @@ msgstr "Cómo elegir el fondo"
 msgid "Left"
 msgstr "Izquierda"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Los menús, diálogos, tooltips, notificaciones y el panel de búsqueda se mantienen opacos"
+
 msgid "Name"
 msgstr "Nombre"
 
@@ -170,6 +173,9 @@ msgstr "Intervalo de presentación"
 
 msgid "Slideshow interval (second)"
 msgstr "Intervalo de presentación (segundos)"
+
+msgid "Solid popup panels"
+msgstr "Paneles emergentes opacos"
 
 msgid "Style"
 msgstr "Estilo"

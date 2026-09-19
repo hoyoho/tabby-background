@@ -114,6 +114,9 @@ msgstr "Jak wybrać tło"
 msgid "Left"
 msgstr "Lewo"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menu, okna dialogowe, podpowiedzi, powiadomienia i panel wyszukiwania pozostają nieprzezroczyste"
+
 msgid "Name"
 msgstr "Nazwa"
 
@@ -170,6 +173,9 @@ msgstr "Interwał pokazu slajdów"
 
 msgid "Slideshow interval (second)"
 msgstr "Interwał pokazu slajdów (sekundy)"
+
+msgid "Solid popup panels"
+msgstr "Nieprzezroczyste panele wyskakujące"
 
 msgid "Style"
 msgstr "Styl"

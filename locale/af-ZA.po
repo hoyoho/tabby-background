@@ -114,6 +114,9 @@ msgstr "Hoe om die agtergrond te kies"
 msgid "Left"
 msgstr "Links"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Kieslyste, dialoogvensters, nutswenke, kennisgewings en die soekpaneel bly ondeursigtig"
+
 msgid "Name"
 msgstr "Naam"
 
@@ -170,6 +173,9 @@ msgstr "Skyfievertoning-interval"
 
 msgid "Slideshow interval (second)"
 msgstr "Skyfievertoning-interval (sekondes)"
+
+msgid "Solid popup panels"
+msgstr "Soliede opspringpanele"
 
 msgid "Style"
 msgstr "Styl"

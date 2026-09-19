@@ -114,6 +114,9 @@ msgstr "배경 선택 방식"
 msgid "Left"
 msgstr "왼쪽"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "메뉴, 대화 상자, 툴팁, 알림, 검색 패널이 불투명하게 유지됩니다"
+
 msgid "Name"
 msgstr "이름"
 
@@ -170,6 +173,9 @@ msgstr "슬라이드쇼 간격"
 
 msgid "Slideshow interval (second)"
 msgstr "슬라이드쇼 간격(초)"
+
+msgid "Solid popup panels"
+msgstr "팝업 패널 불투명"
 
 msgid "Style"
 msgstr "스타일"

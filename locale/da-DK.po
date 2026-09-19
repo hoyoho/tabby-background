@@ -114,6 +114,9 @@ msgstr "Sådan vælges baggrunden"
 msgid "Left"
 msgstr "Venstre"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menuer, dialogbokse, værktøjstip, meddelelser og søgepanelet forbliver uigennemsigtige"
+
 msgid "Name"
 msgstr "Navn"
 
@@ -170,6 +173,9 @@ msgstr "Slideshow-interval"
 
 msgid "Slideshow interval (second)"
 msgstr "Slideshow-interval (sekunder)"
+
+msgid "Solid popup panels"
+msgstr "Uigennemsigtige pop op-paneler"
 
 msgid "Style"
 msgstr "Stil"

@@ -114,6 +114,9 @@ msgstr "Arka plan nasıl seçilir"
 msgid "Left"
 msgstr "Sol"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Menüler, iletişim kutuları, ipuçları, bildirimler ve arama paneli opak kalır"
+
 msgid "Name"
 msgstr "Ad"
 
@@ -170,6 +173,9 @@ msgstr "Slayt gösterisi aralığı"
 
 msgid "Slideshow interval (second)"
 msgstr "Slayt gösterisi aralığı (saniye)"
+
+msgid "Solid popup panels"
+msgstr "Opak açılır paneller"
 
 msgid "Style"
 msgstr "Stil"

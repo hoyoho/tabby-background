@@ -114,6 +114,9 @@ msgstr "背景の選択方法"
 msgid "Left"
 msgstr "左側"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "メニュー、ダイアログ、ツールチップ、通知、検索パネルを不透明にします"
+
 msgid "Name"
 msgstr "名前"
 
@@ -170,6 +173,9 @@ msgstr "スライドショーの間隔"
 
 msgid "Slideshow interval (second)"
 msgstr "スライドショーの間隔（秒）"
+
+msgid "Solid popup panels"
+msgstr "ポップアップパネルを不透明にする"
 
 msgid "Style"
 msgstr "スタイル"

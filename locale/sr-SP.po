@@ -114,6 +114,9 @@ msgstr "Како изабрати позадину"
 msgid "Left"
 msgstr "Лево"
 
+msgid "Menus, dialogs, tooltips, notifications and the search panel stay opaque"
+msgstr "Менији, дијалози, описи, обавештења и панел претраге остају непрозирни"
+
 msgid "Name"
 msgstr "Назив"
 
@@ -170,6 +173,9 @@ msgstr "Интервал слајдшоуа"
 
 msgid "Slideshow interval (second)"
 msgstr "Интервал слајдшоуа (секунде)"
+
+msgid "Solid popup panels"
+msgstr "Непрозирни искачући панели"
 
 msgid "Style"
 msgstr "Стил"
