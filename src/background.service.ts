@@ -1,11 +1,11 @@
 import { Injectable, Injector, OnDestroy } from "@angular/core";
 import { ConfigService, LogService, Logger, ThemesService, GlobalStyleProvider, TranslateService } from "tabby-core";
-import { AdvancedBackground, Background, BackgroundPluginConfig, DefaultBackground } from "./config.provider";
+import { AdvancedBackground, BackgroundPluginConfig, DefaultBackground } from "./config.provider";
+import { buildBackgroundCss, buildOthersCss, buildUiFontCss } from "./backgroundCss";
 import { translations } from "./translations";
 import * as uuid from "uuid";
 import { readdirSync } from "fs";
 import path from "path";
-import { pathToFileURL } from "url";
 
 @Injectable({ providedIn: "root" })
 export class BackgroundService implements GlobalStyleProvider, OnDestroy {
@@ -89,13 +89,13 @@ export class BackgroundService implements GlobalStyleProvider, OnDestroy {
         return "";
     }
     if (!this.pluginConfig.backgroundEnabled) {
-      return [this.buildUiFontCss(), this.buildOthersCss()].filter(Boolean).join("\n");
+      return [buildUiFontCss(this.pluginConfig), buildOthersCss(this.pluginConfig)].filter(Boolean).join("\n");
     }
     const parts: string[] = [];
     if (this.previewMode && this.pluginConfig.backgrounds[this.previewIndex]) {
-      parts.push(this.buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex]));
+      parts.push(buildBackgroundCss(this.pluginConfig.backgrounds[this.previewIndex], this.renderOptions()));
     } else if (this.pluginConfig.backgroundMode === "simple") {
-      parts.push(this.buildBackgroundCss(this.pluginConfig));
+      parts.push(buildBackgroundCss(this.pluginConfig, this.renderOptions()));
     } else {
       // Advanced mode: try the selected background, fall back to the first
       // available one, then to the simple-mode config so the pane never goes
@@ -104,11 +104,15 @@ export class BackgroundService implements GlobalStyleProvider, OnDestroy {
       if (!background) {
         background = this.pluginConfig.backgrounds.find(b => b.enabled) ?? this.pluginConfig.backgrounds[0];
       }
-      parts.push(this.buildBackgroundCss(background ?? this.pluginConfig));
+      parts.push(buildBackgroundCss(background ?? this.pluginConfig, this.renderOptions()));
     }
-    parts.push(this.buildUiFontCss());
-    parts.push(this.buildOthersCss());
+    parts.push(buildUiFontCss(this.pluginConfig));
+    parts.push(buildOthersCss(this.pluginConfig));
     return parts.filter(Boolean).join("\n");
+  }
+
+  private renderOptions(): { fadeIn: boolean, fadeDurationMs: number } {
+    return { fadeIn: this.fadeIn, fadeDurationMs: this.fadeDurationMs };
   }
 
   applyStyle() {
@@ -263,160 +267,5 @@ export class BackgroundService implements GlobalStyleProvider, OnDestroy {
       this.previewMode = false;
       this.applyStyle();
     }
-  }
-
-  /**
-   * Convert a filesystem path to a URL usable in CSS `url()`.
-   *
-   * Absolute Windows paths (e.g. `C:\Users\...`) would be parsed as an unknown
-   * protocol (`C:`) inside `url()`, so we convert them to `file:///` URLs via
-   * `pathToFileURL` (which also handles percent-encoding correctly).
-   *
-   * Relative paths resolve against the app's own `file://` origin and only
-   * need forward-slash normalization + `encodeURI`.
-   */
-  private toFileUrl(p: string): string {
-    const normalized = p.replaceAll("\\", "/");
-    const isAbsolute = /^[a-zA-Z]:\//.test(normalized) || normalized.startsWith("/");
-    if (!isAbsolute) {
-      return encodeURI(normalized);
-    }
-    try {
-      return pathToFileURL(p).href;
-    } catch {
-      return `file:///${encodeURI(normalized)}`;
-    }
-  }
-
-  buildBackgroundCss(background: Background) {
-    const { backgroundPath } = background;
-    const { backgroundFullscreenType, backgroundFullscreenRepeatType, backgroundFullscreenPosition } = background;
-    const {
-      backgroundOpacity,
-      backgroundBlur,
-      backgroundBrightness,
-      backgroundContrast,
-      backgroundGrayscale,
-      backgroundHueRotate,
-      backgroundInvert,
-      backgroundSaturate,
-      backgroundSepia,
-    } = background;
-    const { backgroundListGroupTransparent, backgroundFooterTransparent, backgroundSidebarTransparent } = background;
-
-    const css = `
-/* added by tabby-background plugin */
-/* The image is painted above the window tint core puts on \`body\`; core keeps
-   the tab containers and the terminal surface transparent for us, so no
-   background needs overriding here (see GlobalStyleProvider). */
-.content-tab-active::before {
-  content: ""; position: fixed; left: 0; right: 0; z-index: -1; display: block; width: 100%; height: 100%;
-  filter:${
-    (backgroundOpacity === 100 ? "" : ` opacity(${backgroundOpacity}%)`) +
-    (backgroundBlur === 0 ? "" : ` blur(${backgroundBlur}px)`) +
-    (backgroundBrightness === 100 ? "" : ` brightness(${backgroundBrightness}%)`) +
-    (backgroundContrast === 100 ? "" : ` contrast(${backgroundContrast}%)`) +
-    (backgroundGrayscale === 0 ? "" : ` grayscale(${backgroundGrayscale}%)`) +
-    (backgroundHueRotate === 0 ? "" : ` hue-rotate(${backgroundHueRotate}deg)`) +
-    (backgroundInvert === 0 ? "" : ` invert(${backgroundInvert}%)`) +
-    (backgroundSaturate === 100 ? "" : ` saturate(${backgroundSaturate}%)`) +
-    (backgroundSepia === 0 ? "" : ` sepia(${backgroundSepia}%)`) +
-    ";"
-  }
-  opacity: ${this.fadeIn ? 1 : 0};
-  transition: opacity ${this.fadeDurationMs}ms ease-in-out;
-  background-image: url("${this.toFileUrl(backgroundPath)}");
-  background-repeat: ${backgroundFullscreenRepeatType};
-  background-position: ${backgroundFullscreenPosition};
-  background-size: ${backgroundFullscreenType};
-}
-/* group list */
-${
-  backgroundListGroupTransparent > 0
-    ? `
-.list-group {
-  --bs-list-group-bg: color-mix(in srgb, var(--theme-bg-more) ${100 - backgroundListGroupTransparent}%, transparent);
-}`.trim()
-    : ""
-}
-/* footer */
-${
-  backgroundFooterTransparent !== 50
-    ? `
-footer {
-  --start-page-footer-bg: color-mix(in srgb, rgba(0,0,0,1) ${100 - backgroundFooterTransparent}%, transparent);
-}`.trim()
-    : ""
-}
-/* sidebar */
-${
-  backgroundSidebarTransparent > 0
-    ? `
-.sidebar-main {
-  --sidebar-bg: color-mix(in srgb, var(--theme-bg-more-2) ${100 - backgroundSidebarTransparent}%, transparent);
-}`.trim()
-    : ""
-}`.trim();
-    return css;
-  }
-
-  buildUiFontCss() {
-    const { uiFontEnabled, uiFontFamily, uiFontSize, uiFontTabBarCloseBtnFix } = this.pluginConfig;
-    if (!uiFontEnabled) {
-      return "";
-    }
-    const uiFontCss = `
-/* added by tabby-background plugin */
-body {
-  font-family: "${uiFontFamily}";
-  font-size: ${uiFontSize}px;
-}
-${
-  uiFontTabBarCloseBtnFix
-    ? `
-tab-header button {
-  /*left: 8px;*/
-  font-family: "Source Sans Pro";
-}`.trim()
-    : ""
-}`.trim();
-    return uiFontCss;
-  }
-
-  buildOthersCss() {
-    const { othersUnfocusedTabDimming, othersFocusedTabDimming, othersTabBarPersistentSpaceMinWidth, othersHideFooter, othersSolidPopups } = this.pluginConfig;
-    let css = "";
-    // Focused/unfocused follows the workspace's global focus rather than the
-    // per-pane foreground tab: `.globally-focused` is set by WorkspaceComponent
-    // on every session whose pane holds the global focus (all panes in
-    // focus-all mode). Unfocused panes' visible sessions get dimmed by
-    // `othersUnfocusedTabDimming`, the focused pane by `othersFocusedTabDimming`.
-    if (othersUnfocusedTabDimming !== 0) {
-      css += `\nsplit-tab>.child:not(.globally-focused) {\n  opacity: ${(100 - othersUnfocusedTabDimming) / 100};\n}\n`;
-    }
-    if (othersFocusedTabDimming !== 0) {
-      css += `\nsplit-tab>.child.globally-focused {\n  opacity: ${(100 - othersFocusedTabDimming) / 100};\n}\n`;
-    }
-    if (othersTabBarPersistentSpaceMinWidth !== 138) {
-      css += `\n.btn-space.persistent {\n  min-width: ${othersTabBarPersistentSpaceMinWidth}px !important;\n}\n`;
-    }
-    if (othersHideFooter) {
-      css += `\nfooter {\n  opacity: 0;\n}\n`;
-    }
-    if (othersSolidPopups) {
-      // Popup panels (menus, dialogs, tooltips, notifications, the search panel)
-      // are core's frosted surfaces, and core tints all of them through the one
-      // `--frost-tint` token (see theme.new.scss). Pointing that token back at
-      // the opaque shade keeps this rule from having to list the surfaces, so
-      // any surface core adds later follows along.
-      //
-      // `html` in the selector is only about precedence: core declares the same
-      // token on `body.vibrancy`, and the plugin's styles live in their own
-      // <style> element, so an equal-specificity rule would depend on the order
-      // the two elements happen to be inserted in.
-      css += `\nhtml body.vibrancy {\n  --frost-tint: var(--theme-bg-more-solid);\n}\n`;
-    }
-
-    return css ? `/* added by tabby-background plugin */${css}` : "";
   }
 }
